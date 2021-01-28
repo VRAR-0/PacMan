@@ -600,30 +600,6 @@
                                                                                                                                           <field name="FIELDNAME">Instance_level_Cube.031</field>
                                                                                                                                         </shadow>
                                                                                                                                       </value>
-                                                                                                                                      <next>
-                                                                                                                                        <block type="createPhysicsBody" id=";T927Fu(-1Id/hFPca#m">
-                                                                                                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                                                                                                                                          <field name="TYPE">STATIC</field>
-                                                                                                                                          <field name="SHAPE">BOX</field>
-                                                                                                                                          <value name="OBJECT">
-                                                                                                                                            <shadow type="objectList" id=".A0T|rzS$),E|qFC2@lf">
-                                                                                                                                              <field name="FIELDNAME">level</field>
-                                                                                                                                            </shadow>
-                                                                                                                                          </value>
-                                                                                                                                          <next>
-                                                                                                                                            <block type="createPhysicsBody" id="DyvN,#3=zRq5Ex(F;Ma?">
-                                                                                                                                              <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                                                                                                                                              <field name="TYPE">STATIC</field>
-                                                                                                                                              <field name="SHAPE">BOX</field>
-                                                                                                                                              <value name="OBJECT">
-                                                                                                                                                <shadow type="objectList" id="zWPL[gMIgaI?3RV_c.YC">
-                                                                                                                                                  <field name="FIELDNAME">Scene</field>
-                                                                                                                                                </shadow>
-                                                                                                                                              </value>
-                                                                                                                                            </block>
-                                                                                                                                          </next>
-                                                                                                                                        </block>
-                                                                                                                                      </next>
                                                                                                                                     </block>
                                                                                                                                   </next>
                                                                                                                                 </block>
