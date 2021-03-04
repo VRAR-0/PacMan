@@ -154,7 +154,7 @@
                                   </value>
                                   <value name="Y">
                                     <shadow type="math_number" id="cb1c}!D@se^jKFZ(oKDM">
-                                      <field name="NUM">-90</field>
+                                      <field name="NUM">90</field>
                                     </shadow>
                                   </value>
                                   <value name="Z">
@@ -221,7 +221,7 @@
                                       </value>
                                       <value name="Y">
                                         <shadow type="math_number" id="KShtxaraH*IsDL]7(%nZ">
-                                          <field name="NUM">90</field>
+                                          <field name="NUM">-90</field>
                                         </shadow>
                                       </value>
                                       <value name="Z">

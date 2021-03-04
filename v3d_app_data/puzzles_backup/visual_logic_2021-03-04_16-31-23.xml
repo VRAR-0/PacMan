@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="true" scrollx="-18.773153965405072" scrolly="-33.08392050425573" scale="0.9">
+  <tab name="player" type="SecondaryTab" active="true" scrollx="-35.43990201228007" scrolly="-59.75060751597448" scale="0.9">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -149,12 +149,12 @@
                                   </value>
                                   <value name="X">
                                     <shadow type="math_number" id="E.A]I=cJ`*)*(d2_E*5/">
-                                      <field name="NUM">0</field>
+                                      <field name="NUM">-180</field>
                                     </shadow>
                                   </value>
                                   <value name="Y">
                                     <shadow type="math_number" id="cb1c}!D@se^jKFZ(oKDM">
-                                      <field name="NUM">-90</field>
+                                      <field name="NUM">0</field>
                                     </shadow>
                                   </value>
                                   <value name="Z">
@@ -221,7 +221,7 @@
                                       </value>
                                       <value name="Y">
                                         <shadow type="math_number" id="KShtxaraH*IsDL]7(%nZ">
-                                          <field name="NUM">90</field>
+                                          <field name="NUM">0</field>
                                         </shadow>
                                       </value>
                                       <value name="Z">
