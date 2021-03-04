@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="true" scrollx="-18.773153965405072" scrolly="-33.08392050425573" scale="0.9">
+  <tab name="player" type="SecondaryTab" active="true" scrollx="-35.43990201228007" scrolly="-59.75060751597448" scale="0.9">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -141,7 +141,7 @@
                               <next>
                                 <block type="setObjDirection" id="ZPZw/s1%6|O8GY^h1D6!">
                                   <field name="POINT">TRUE</field>
-                                  <field name="LOCK_UP">TRUE</field>
+                                  <field name="LOCK_UP">FALSE</field>
                                   <value name="TARGETOBJ">
                                     <shadow type="objectList" id="VXr)iJ+Pv|N0(sq#/*^8">
                                       <field name="FIELDNAME">PacMan_body</field>
@@ -149,12 +149,12 @@
                                   </value>
                                   <value name="X">
                                     <shadow type="math_number" id="E.A]I=cJ`*)*(d2_E*5/">
-                                      <field name="NUM">0</field>
+                                      <field name="NUM">-1</field>
                                     </shadow>
                                   </value>
                                   <value name="Y">
                                     <shadow type="math_number" id="cb1c}!D@se^jKFZ(oKDM">
-                                      <field name="NUM">-90</field>
+                                      <field name="NUM">0</field>
                                     </shadow>
                                   </value>
                                   <value name="Z">
@@ -208,7 +208,7 @@
                                   <next>
                                     <block type="setObjDirection" id="c}lH1HvVePT(cpH)AB%!">
                                       <field name="POINT">TRUE</field>
-                                      <field name="LOCK_UP">TRUE</field>
+                                      <field name="LOCK_UP">FALSE</field>
                                       <value name="TARGETOBJ">
                                         <shadow type="objectList" id="lu{T/=af*^!SBv3|}vXJ">
                                           <field name="FIELDNAME">PacMan_body</field>
@@ -216,12 +216,12 @@
                                       </value>
                                       <value name="X">
                                         <shadow type="math_number" id="W8W_(+4E$).QQ+Y/Ltuw">
-                                          <field name="NUM">0</field>
+                                          <field name="NUM">1</field>
                                         </shadow>
                                       </value>
                                       <value name="Y">
                                         <shadow type="math_number" id="KShtxaraH*IsDL]7(%nZ">
-                                          <field name="NUM">90</field>
+                                          <field name="NUM">0</field>
                                         </shadow>
                                       </value>
                                       <value name="Z">
@@ -275,7 +275,7 @@
                                       <next>
                                         <block type="setObjDirection" id="kUKJ!AJz;q_YdLemMglk">
                                           <field name="POINT">TRUE</field>
-                                          <field name="LOCK_UP">TRUE</field>
+                                          <field name="LOCK_UP">FALSE</field>
                                           <value name="TARGETOBJ">
                                             <shadow type="objectList" id="ohXJ[C*c.i+-9L`n}]ke">
                                               <field name="FIELDNAME">PacMan_body</field>
@@ -283,12 +283,12 @@
                                           </value>
                                           <value name="X">
                                             <shadow type="math_number" id="0K*:y?CU}xi!5S3ZmF/b">
-                                              <field name="NUM">-90</field>
+                                              <field name="NUM">0</field>
                                             </shadow>
                                           </value>
                                           <value name="Y">
                                             <shadow type="math_number" id="{$kWw1Eq;t@.|?zB?]Z+">
-                                              <field name="NUM">0</field>
+                                              <field name="NUM">1</field>
                                             </shadow>
                                           </value>
                                           <value name="Z">
@@ -342,7 +342,7 @@
                                           <next>
                                             <block type="setObjDirection" id="7y.S:@$Ajx,hv9GP9P-6">
                                               <field name="POINT">TRUE</field>
-                                              <field name="LOCK_UP">TRUE</field>
+                                              <field name="LOCK_UP">FALSE</field>
                                               <value name="TARGETOBJ">
                                                 <shadow type="objectList" id="])uHXl=J%~fFx;IQYL}7">
                                                   <field name="FIELDNAME">PacMan_body</field>
@@ -350,12 +350,12 @@
                                               </value>
                                               <value name="X">
                                                 <shadow type="math_number" id=",$wFucUccG|XpK/Jx{l4">
-                                                  <field name="NUM">90</field>
+                                                  <field name="NUM">0</field>
                                                 </shadow>
                                               </value>
                                               <value name="Y">
                                                 <shadow type="math_number" id="+/,`810c:GjvP22D9lN+">
-                                                  <field name="NUM">0</field>
+                                                  <field name="NUM">1</field>
                                                 </shadow>
                                               </value>
                                               <value name="Z">
