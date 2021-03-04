@@ -138,32 +138,6 @@
                                   </value>
                                 </block>
                               </value>
-                              <next>
-                                <block type="setObjDirection" id="ZPZw/s1%6|O8GY^h1D6!">
-                                  <field name="POINT">TRUE</field>
-                                  <field name="LOCK_UP">FALSE</field>
-                                  <value name="TARGETOBJ">
-                                    <shadow type="objectList" id="VXr)iJ+Pv|N0(sq#/*^8">
-                                      <field name="FIELDNAME">PacMan_body</field>
-                                    </shadow>
-                                  </value>
-                                  <value name="X">
-                                    <shadow type="math_number" id="E.A]I=cJ`*)*(d2_E*5/">
-                                      <field name="NUM">0</field>
-                                    </shadow>
-                                  </value>
-                                  <value name="Y">
-                                    <shadow type="math_number" id="cb1c}!D@se^jKFZ(oKDM">
-                                      <field name="NUM">-1</field>
-                                    </shadow>
-                                  </value>
-                                  <value name="Z">
-                                    <shadow type="math_number" id="[O@a;_eED^V$7Jlm4P2{">
-                                      <field name="NUM">0</field>
-                                    </shadow>
-                                  </value>
-                                </block>
-                              </next>
                             </block>
                           </statement>
                           <next>
