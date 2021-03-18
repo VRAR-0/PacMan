@@ -799,8 +799,18 @@
       </next>
     </block>
   </tab>
-  <tab name="enemy" type="SecondaryTab" active="true" scrollx="49.367401123046875" scrolly="113.68429565429688" scale="0.6260121018585126">
-    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," x="10" y="68">
+  <tab name="enemy" type="SecondaryTab" active="true" scrollx="102.12006378173834" scrolly="98.80256652832031" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsBody" id="tYRV.oTX;CakYsKgGQPL" x="10" y="30">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
+      <field name="TYPE">STATIC</field>
+      <field name="SHAPE">BOX</field>
+      <value name="OBJECT">
+        <shadow type="objectList" id="azxS~Z^Yhv55RJBh0Xk)">
+          <field name="FIELDNAME">ghost</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," disabled="true" x="10" y="190">
       <statement name="DO">
         <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
           <field name="POINT">TRUE</field>
@@ -852,90 +862,27 @@
               </value>
             </block>
           </value>
-          <next>
-            <block type="applyObjLocalTransform" id="R)_A?-?i.f!4JwekG7cF" inline="false">
-              <field name="MODE">position</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="Uc0:Bq:E`7.wRI_Inz+8">
-                  <field name="FIELDNAME">ghost</field>
-                </shadow>
-              </value>
-              <value name="X">
-                <block type="math_arithmetic" id="/$]R%[XA)mFv)}JxsXq5">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="NKj/){694vj,Bhl49JvH">
-                      <field name="NUM">2</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number" id="R8hkI6.W@B_?CJ(h$fi+">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="OJ`hkv*piVWAj#!^JcT}">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number" id="?!;(zZX18HEU#4Pz5ngb">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="elapsed" id="8)I}cb+*Dkh:[Lpcz1;K"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number" id="pLVMT5|V/x-d9efNt}=(">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="5%gsVmp;_3]Y,VggrY]d">
-                          <field name="COORD">X</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="9agC^AngD/8$grjY1T1/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
-                </block>
-              </value>
-              <value name="Y">
-                <block type="math_arithmetic" id="*uOw*p@#gCRJ`%d:e3@L">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="lOWolmW_oV6PCWcM/5;k">
-                      <field name="NUM">2</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="+aQS1x{3_CdYSZh7`t^[">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="elapsed" id="1zX0v3L_`Bv2OcaG}H5t"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="l(/|pKBLWMdrfJ!RTC;]">
-                          <field name="COORD">Y</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="0IL+[UCC3,;wGwE5Q-I/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
-                </block>
-              </value>
-            </block>
-          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="W=R3]pJM~j8lJxcQ3uBI" x="-30" y="470">
+      <value name="OBJECT_A">
+        <shadow type="objectList" id="hT-}bS|e2M{]S%}9Fr+(">
+          <field name="FIELDNAME">ghost</field>
+        </shadow>
+      </value>
+      <value name="OBJECT_B">
+        <shadow type="objectList" id="AR`2m0WPM))GBc,d}auw">
+          <field name="FIELDNAME">PacMan</field>
+        </shadow>
+      </value>
+      <statement name="COLLIDE_DO">
+        <block type="hide" id="/x.:$@J+F[fz)Usc;d8K">
+          <value name="VALUE">
+            <shadow type="objectList" id="XwD@liQ!`WWr*}wO[Mce">
+              <field name="FIELDNAME">ghost</field>
+            </shadow>
+          </value>
         </block>
       </statement>
     </block>

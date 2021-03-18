@@ -800,142 +800,213 @@
     </block>
   </tab>
   <tab name="enemy" type="SecondaryTab" active="true" scrollx="49.367401123046875" scrolly="113.68429565429688" scale="0.6260121018585126">
-    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," x="10" y="68">
-      <statement name="DO">
-        <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
-          <field name="POINT">TRUE</field>
-          <field name="LOCK_UP">FALSE</field>
-          <value name="TARGETOBJ">
-            <shadow type="objectList" id="Npm*D]~,d!2X2U3jg*ZC">
-              <field name="FIELDNAME">ghost</field>
-            </shadow>
-          </value>
-          <value name="X">
-            <shadow type="math_number" id="C!uCgzetQ4st;46{bRts">
-              <field name="NUM">1</field>
-            </shadow>
-            <block type="getObjTransform" id="Ei86cR*!??g.Ll4HZ@iV">
-              <field name="MODE">position</field>
-              <field name="COORD">x</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="RA?xI./OvLF1%quhCE[t">
-                  <field name="FIELDNAME">PacMan</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsBody" id="tYRV.oTX;CakYsKgGQPL" x="10" y="30">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
+      <field name="TYPE">STATIC</field>
+      <field name="SHAPE">BOX</field>
+      <value name="OBJECT">
+        <shadow type="objectList" id="azxS~Z^Yhv55RJBh0Xk)">
+          <field name="FIELDNAME">ghost</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=,">
+          <statement name="DO">
+            <block type="setBodyState" id="Kx?FA?Z*cO%n#ZQ~?i!R">
+              <field name="NEW_STATE">ACTIVATE</field>
+              <value name="OBJECT">
+                <shadow type="objectList" id="z/7.[PiNgM]li*S#=;WP">
+                  <field name="FIELDNAME">Instance_ghost_ghost_physics</field>
                 </shadow>
               </value>
+              <next>
+                <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
+                  <field name="POINT">TRUE</field>
+                  <field name="LOCK_UP">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="Npm*D]~,d!2X2U3jg*ZC">
+                      <field name="FIELDNAME">ghost</field>
+                    </shadow>
+                  </value>
+                  <value name="X">
+                    <shadow type="math_number" id="C!uCgzetQ4st;46{bRts">
+                      <field name="NUM">1</field>
+                    </shadow>
+                    <block type="getObjTransform" id="Ei86cR*!??g.Ll4HZ@iV">
+                      <field name="MODE">position</field>
+                      <field name="COORD">x</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="RA?xI./OvLF1%quhCE[t">
+                          <field name="FIELDNAME">PacMan</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="Y">
+                    <shadow type="math_number" id="/0@;D8:4*7iriwNX:y:Y">
+                      <field name="NUM">0</field>
+                    </shadow>
+                    <block type="getObjTransform" id="ixVb@z7A!fOswI_^BPm0">
+                      <field name="MODE">position</field>
+                      <field name="COORD">y</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="a94Y+|V-$g%RG@fZ,CqA">
+                          <field name="FIELDNAME">PacMan</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="Z">
+                    <shadow type="math_number" id="EI]KGr0ZmEyYV-/HcBdJ">
+                      <field name="NUM">0</field>
+                    </shadow>
+                    <block type="getObjTransform" id="{V=]r-BT|h]@!GOxr}4D">
+                      <field name="MODE">position</field>
+                      <field name="COORD">z</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="g8qQRBSw^a=-vNV5glx~">
+                          <field name="FIELDNAME">PacMan</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="applyObjLocalTransform" id="R)_A?-?i.f!4JwekG7cF" inline="false">
+                      <field name="MODE">position</field>
+                      <value name="TARGETOBJ">
+                        <shadow type="objectList" id="Uc0:Bq:E`7.wRI_Inz+8">
+                          <field name="FIELDNAME">ghost</field>
+                        </shadow>
+                      </value>
+                      <value name="X">
+                        <block type="math_arithmetic" id="/$]R%[XA)mFv)}JxsXq5">
+                          <field name="OP">MULTIPLY</field>
+                          <value name="A">
+                            <shadow type="math_number" id="NKj/){694vj,Bhl49JvH">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="R8hkI6.W@B_?CJ(h$fi+">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="OJ`hkv*piVWAj#!^JcT}">
+                              <field name="OP">MULTIPLY</field>
+                              <value name="A">
+                                <shadow type="math_number" id="?!;(zZX18HEU#4Pz5ngb">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="elapsed" id="8)I}cb+*Dkh:[Lpcz1;K"/>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="pLVMT5|V/x-d9efNt}=(">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="getObjDirection" id="5%gsVmp;_3]Y,VggrY]d">
+                                  <field name="COORD">X</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="9agC^AngD/8$grjY1T1/">
+                                      <field name="FIELDNAME">PacMan</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="Y">
+                        <block type="math_arithmetic" id="*uOw*p@#gCRJ`%d:e3@L">
+                          <field name="OP">MULTIPLY</field>
+                          <value name="A">
+                            <shadow type="math_number" id="lOWolmW_oV6PCWcM/5;k">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="+aQS1x{3_CdYSZh7`t^[">
+                              <field name="OP">MULTIPLY</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="elapsed" id="1zX0v3L_`Bv2OcaG}H5t"/>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="getObjDirection" id="l(/|pKBLWMdrfJ!RTC;]">
+                                  <field name="COORD">Y</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="0IL+[UCC3,;wGwE5Q-I/">
+                                      <field name="FIELDNAME">PacMan</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
             </block>
-          </value>
-          <value name="Y">
-            <shadow type="math_number" id="/0@;D8:4*7iriwNX:y:Y">
-              <field name="NUM">0</field>
-            </shadow>
-            <block type="getObjTransform" id="ixVb@z7A!fOswI_^BPm0">
-              <field name="MODE">position</field>
-              <field name="COORD">y</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="a94Y+|V-$g%RG@fZ,CqA">
-                  <field name="FIELDNAME">PacMan</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
-          <value name="Z">
-            <shadow type="math_number" id="EI]KGr0ZmEyYV-/HcBdJ">
-              <field name="NUM">0</field>
-            </shadow>
-            <block type="getObjTransform" id="{V=]r-BT|h]@!GOxr}4D">
-              <field name="MODE">position</field>
-              <field name="COORD">z</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="g8qQRBSw^a=-vNV5glx~">
-                  <field name="FIELDNAME">PacMan</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
+          </statement>
           <next>
-            <block type="applyObjLocalTransform" id="R)_A?-?i.f!4JwekG7cF" inline="false">
-              <field name="MODE">position</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="Uc0:Bq:E`7.wRI_Inz+8">
+            <block type="detectCollision" id="W=R3]pJM~j8lJxcQ3uBI">
+              <value name="OBJECT_A">
+                <shadow type="objectList" id="hT-}bS|e2M{]S%}9Fr+(">
                   <field name="FIELDNAME">ghost</field>
                 </shadow>
               </value>
-              <value name="X">
-                <block type="math_arithmetic" id="/$]R%[XA)mFv)}JxsXq5">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="NKj/){694vj,Bhl49JvH">
-                      <field name="NUM">2</field>
+              <value name="OBJECT_B">
+                <shadow type="objectList" id="AR`2m0WPM))GBc,d}auw">
+                  <field name="FIELDNAME">PacMan</field>
+                </shadow>
+              </value>
+              <statement name="COLLIDE_DO">
+                <block type="hide" id="/x.:$@J+F[fz)Usc;d8K">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="XwD@liQ!`WWr*}wO[Mce">
+                      <field name="FIELDNAME">Instance_ghost_ghost_mesh</field>
                     </shadow>
                   </value>
-                  <value name="B">
-                    <shadow type="math_number" id="R8hkI6.W@B_?CJ(h$fi+">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="OJ`hkv*piVWAj#!^JcT}">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number" id="?!;(zZX18HEU#4Pz5ngb">
-                          <field name="NUM">2</field>
+                  <next>
+                    <block type="removePhysicsBody" id="E|b~j8^`zFb?WOX(9G3A">
+                      <value name="OBJECT">
+                        <shadow type="objectList" id="N9k5N4Yu5_;%6ZAw{4eb">
+                          <field name="FIELDNAME">ghost</field>
                         </shadow>
-                        <block type="elapsed" id="8)I}cb+*Dkh:[Lpcz1;K"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number" id="pLVMT5|V/x-d9efNt}=(">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="5%gsVmp;_3]Y,VggrY]d">
-                          <field name="COORD">X</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="9agC^AngD/8$grjY1T1/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
                       </value>
                     </block>
-                  </value>
+                  </next>
                 </block>
-              </value>
-              <value name="Y">
-                <block type="math_arithmetic" id="*uOw*p@#gCRJ`%d:e3@L">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="lOWolmW_oV6PCWcM/5;k">
-                      <field name="NUM">2</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="+aQS1x{3_CdYSZh7`t^[">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="elapsed" id="1zX0v3L_`Bv2OcaG}H5t"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="l(/|pKBLWMdrfJ!RTC;]">
-                          <field name="COORD">Y</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="0IL+[UCC3,;wGwE5Q-I/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
-                </block>
-              </value>
+              </statement>
             </block>
           </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="onSimulationTick" id="xZ,c2]-9^i=0@J]~[Zw~" x="190" y="790">
+      <field name="TYPE">BEFORE</field>
+      <statement name="DO">
+        <block type="snapBody" id="R)3dC-lorq8wHMhYj%HK">
+          <value name="SNAPWHAT">
+            <shadow type="objectList" id="yOt=X*bo.4z|E3k0w/~z">
+              <field name="FIELDNAME">Instance_ghost_ghost_physics</field>
+            </shadow>
+          </value>
+          <value name="SNAPTO">
+            <shadow type="objectList" id="$2P/[ucyHXhFvnW}f?Cu">
+              <field name="FIELDNAME">ghost</field>
+            </shadow>
+          </value>
         </block>
       </statement>
     </block>
