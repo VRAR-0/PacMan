@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="465.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000003" scrolly="465.5000000000002" scale="0.9">
+  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000005" scrolly="465.5000000000001" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsWorld" id="$W{X?~3#=0z[;64u3[n/" x="-930" y="-430">
       <field name="SOFT_BODY">FALSE</field>
       <value name="GRAVITY">
@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="false" scrollx="29.358337402343466" scrolly="3.3838958740234375" scale="0.7120883389758572">
+  <tab name="player" type="SecondaryTab" active="false" scrollx="29.35833740234341" scrolly="3.3838958740234375" scale="0.7120883389758572">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -799,146 +799,70 @@
       </next>
     </block>
   </tab>
-  <tab name="enemy" type="SecondaryTab" active="true" scrollx="49.367401123046875" scrolly="113.68429565429688" scale="0.6260121018585126">
-    <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," x="10" y="68">
-      <statement name="DO">
-        <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
-          <field name="POINT">TRUE</field>
-          <field name="LOCK_UP">FALSE</field>
-          <value name="TARGETOBJ">
-            <shadow type="objectList" id="Npm*D]~,d!2X2U3jg*ZC">
-              <field name="FIELDNAME">ghost</field>
-            </shadow>
-          </value>
-          <value name="X">
-            <shadow type="math_number" id="C!uCgzetQ4st;46{bRts">
-              <field name="NUM">1</field>
-            </shadow>
-            <block type="getObjTransform" id="Ei86cR*!??g.Ll4HZ@iV">
-              <field name="MODE">position</field>
-              <field name="COORD">x</field>
+  <tab name="enemy" type="SecondaryTab" active="true" scrollx="-63.657615661621094" scrolly="91.87189483642578" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="%ErYM,WR2xDLL1gCIx:q" type="">moveEnemy</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsBody" id="tYRV.oTX;CakYsKgGQPL" x="150" y="70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="DYNAMIC"></mutation>
+      <field name="TYPE">DYNAMIC</field>
+      <field name="SHAPE">BOX</field>
+      <value name="OBJECT">
+        <shadow type="objectList" id="azxS~Z^Yhv55RJBh0Xk)">
+          <field name="FIELDNAME">ghost</field>
+        </shadow>
+      </value>
+      <value name="MASS">
+        <shadow type="math_number" id="~L;IL678{7%,sBtZtc$;">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="variables_set" id="=D7PLkBVV0/_(](Z-g!t">
+          <field name="VAR" id="%ErYM,WR2xDLL1gCIx:q">moveEnemy</field>
+          <value name="VALUE">
+            <block type="getObjDirection" id="b[B{{1/A5][sh8V$#=(4">
+              <field name="COORD">X</field>
               <value name="TARGETOBJ">
-                <shadow type="objectList" id="RA?xI./OvLF1%quhCE[t">
-                  <field name="FIELDNAME">PacMan</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
-          <value name="Y">
-            <shadow type="math_number" id="/0@;D8:4*7iriwNX:y:Y">
-              <field name="NUM">0</field>
-            </shadow>
-            <block type="getObjTransform" id="ixVb@z7A!fOswI_^BPm0">
-              <field name="MODE">position</field>
-              <field name="COORD">y</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="a94Y+|V-$g%RG@fZ,CqA">
-                  <field name="FIELDNAME">PacMan</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
-          <value name="Z">
-            <shadow type="math_number" id="EI]KGr0ZmEyYV-/HcBdJ">
-              <field name="NUM">0</field>
-            </shadow>
-            <block type="getObjTransform" id="{V=]r-BT|h]@!GOxr}4D">
-              <field name="MODE">position</field>
-              <field name="COORD">z</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="g8qQRBSw^a=-vNV5glx~">
+                <shadow type="objectList" id="7Vt5@^3K@LpK}-E]2Rx8">
                   <field name="FIELDNAME">PacMan</field>
                 </shadow>
               </value>
             </block>
           </value>
           <next>
-            <block type="applyObjLocalTransform" id="R)_A?-?i.f!4JwekG7cF" inline="false">
-              <field name="MODE">position</field>
-              <value name="TARGETOBJ">
-                <shadow type="objectList" id="Uc0:Bq:E`7.wRI_Inz+8">
-                  <field name="FIELDNAME">ghost</field>
+            <block type="setVectorValue" id="-[)cO)KW]*NMUog96h-4">
+              <field name="VALUE_NAME">LENGTH</field>
+              <value name="VECTOR">
+                <block type="variables_get" id=":TG{tO(CLAoHs,4jT#7H">
+                  <field name="VAR" id="%ErYM,WR2xDLL1gCIx:q">moveEnemy</field>
+                </block>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="j^6QCm+]:[D~L/-KdH.3">
+                  <field name="NUM">10</field>
                 </shadow>
               </value>
-              <value name="X">
-                <block type="math_arithmetic" id="/$]R%[XA)mFv)}JxsXq5">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="NKj/){694vj,Bhl49JvH">
-                      <field name="NUM">2</field>
-                    </shadow>
-                  </value>
-                  <value name="B">
-                    <shadow type="math_number" id="R8hkI6.W@B_?CJ(h$fi+">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="OJ`hkv*piVWAj#!^JcT}">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number" id="?!;(zZX18HEU#4Pz5ngb">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="elapsed" id="8)I}cb+*Dkh:[Lpcz1;K"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number" id="pLVMT5|V/x-d9efNt}=(">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="5%gsVmp;_3]Y,VggrY]d">
-                          <field name="COORD">X</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="9agC^AngD/8$grjY1T1/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
+              <next>
+                <block type="physicsBodyApplyParam" id="KXc0QPi#_T3sISICzevS">
+                  <field name="TYPE">IMPULSE</field>
+                  <value name="PARAM">
+                    <block type="variables_get" id="QZKv8T,,B0fG#~C5zRHE">
+                      <field name="VAR" id="%ErYM,WR2xDLL1gCIx:q">moveEnemy</field>
                     </block>
                   </value>
-                </block>
-              </value>
-              <value name="Y">
-                <block type="math_arithmetic" id="*uOw*p@#gCRJ`%d:e3@L">
-                  <field name="OP">MULTIPLY</field>
-                  <value name="A">
-                    <shadow type="math_number" id="lOWolmW_oV6PCWcM/5;k">
-                      <field name="NUM">2</field>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="O{79P@}EFQ8Lwd$HJQyS">
+                      <field name="FIELDNAME">ghost</field>
                     </shadow>
                   </value>
-                  <value name="B">
-                    <shadow type="math_number">
-                      <field name="NUM">2</field>
-                    </shadow>
-                    <block type="math_arithmetic" id="+aQS1x{3_CdYSZh7`t^[">
-                      <field name="OP">MULTIPLY</field>
-                      <value name="A">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="elapsed" id="1zX0v3L_`Bv2OcaG}H5t"/>
-                      </value>
-                      <value name="B">
-                        <shadow type="math_number">
-                          <field name="NUM">2</field>
-                        </shadow>
-                        <block type="getObjDirection" id="l(/|pKBLWMdrfJ!RTC;]">
-                          <field name="COORD">Y</field>
-                          <value name="TARGETOBJ">
-                            <shadow type="objectList" id="0IL+[UCC3,;wGwE5Q-I/">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
                 </block>
-              </value>
+              </next>
             </block>
           </next>
         </block>
-      </statement>
+      </next>
     </block>
   </tab>
-  <editorsettings viewport-x="804" viewport-y="57" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1023" viewport-y="61" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
