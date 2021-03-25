@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="-107.58282947540283" scrolly="132.25338745117188" scale="1">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="-37.79865351610101" scrolly="131.1742228358753" scale="0.9542664788014436">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
     </variables>
@@ -951,22 +951,17 @@
           <mutation items="4"/>
           <value name="ADD0">
             <block type="objectList" id="B5XZpckPGeWUBevR!7Zd">
-              <field name="FIELDNAME">CheckPoint9</field>
-            </block>
-          </value>
-          <value name="ADD1">
-            <block type="objectList" id="f`KP2d|Qpd!x;?*sMK.O">
-              <field name="FIELDNAME">CheckPoint10</field>
+              <field name="FIELDNAME">CheckPoint1</field>
             </block>
           </value>
           <value name="ADD2">
             <block type="objectList" id="@t*p#.?AVsiwOA~]F}PT">
-              <field name="FIELDNAME">CheckPoint11</field>
+              <field name="FIELDNAME">CheckPoint2</field>
             </block>
           </value>
           <value name="ADD3">
             <block type="objectList" id="]sWsAPuO8@ei8w;+u=6q">
-              <field name="FIELDNAME">CheckPoint12</field>
+              <field name="FIELDNAME">CheckPoint3</field>
             </block>
           </value>
         </block>
@@ -1020,5 +1015,5 @@
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="1136" viewport-y="41" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="914" viewport-y="107" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
