@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="875.0000000000001" scrolly="465.5" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000005" scrolly="465.5000000000002" scale="0.9">
+  <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="465.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000003" scrolly="465.5000000000002" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsWorld" id="$W{X?~3#=0z[;64u3[n/" x="-930" y="-430">
       <field name="SOFT_BODY">FALSE</field>
       <value name="GRAVITY">
@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="false" scrollx="29.35833740234341" scrolly="3.3838958740233807" scale="0.7120883389758572">
+  <tab name="player" type="SecondaryTab" active="false" scrollx="29.358337402343466" scrolly="3.3838958740234375" scale="0.7120883389758572">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -403,7 +403,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="level" type="SecondaryTab" active="false" scrollx="-54.00587247332578" scrolly="-112.06032081465747" scale="0.8227024747918814">
+  <tab name="level" type="SecondaryTab" active="false" scrollx="-54.00587247332578" scrolly="-112.06032081465742" scale="0.8227024747918814">
     <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsBody" id="snREN-~!K9EPOW4iTMoc" x="150" y="170">
       <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
       <field name="TYPE">STATIC</field>
@@ -799,7 +799,7 @@
       </next>
     </block>
   </tab>
-  <tab name="enemy" type="SecondaryTab" active="false" scrollx="49.367401123046875" scrolly="113.68429565429688" scale="0.6260121018585126">
+  <tab name="enemy" type="SecondaryTab" active="true" scrollx="49.367401123046875" scrolly="113.68429565429688" scale="0.6260121018585126">
     <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," x="10" y="68">
       <statement name="DO">
         <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
@@ -940,80 +940,5 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="-23.747467041015625" scrolly="69.65913391113293" scale="0.7120883389758572">
-    <variables xmlns="https://developers.google.com/blockly/xml">
-      <variable id="{bk^|d9BW-CKU4mtG{UL" type="">checkPoints</variable>
-    </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="v]w]aNnK_+;X;xEisC/h" x="70" y="110">
-      <field name="VAR" id="{bk^|d9BW-CKU4mtG{UL">checkPoints</field>
-      <value name="VALUE">
-        <block type="lists_create_with" id="tal,sij$u)g*6w{%KA@x">
-          <mutation items="3"/>
-          <value name="ADD0">
-            <block type="objectList" id="B5XZpckPGeWUBevR!7Zd">
-              <field name="FIELDNAME">CheckPoint1</field>
-            </block>
-          </value>
-          <value name="ADD1">
-            <block type="objectList" id="@t*p#.?AVsiwOA~]F}PT">
-              <field name="FIELDNAME">CheckPoint2</field>
-            </block>
-          </value>
-          <value name="ADD2">
-            <block type="objectList" id="]sWsAPuO8@ei8w;+u=6q">
-              <field name="FIELDNAME">CheckPoint3</field>
-            </block>
-          </value>
-        </block>
-      </value>
-      <next>
-        <block type="setInterval" id="(eFZpdwiS|x-!e`[ve#E">
-          <value name="VALUE">
-            <shadow type="math_number" id="%80O8Ti7@`JZy,,=)(ly">
-              <field name="NUM">5</field>
-            </shadow>
-          </value>
-          <statement name="DO">
-            <block type="snapToObject" id="+Yt^9oCDo7HtjTQpa^_2">
-              <value name="SNAPWHAT">
-                <shadow type="objectList" id="3G~=@*xD*0Wxn1wl.G)x">
-                  <field name="FIELDNAME">Smart</field>
-                </shadow>
-              </value>
-              <value name="SNAPTO">
-                <shadow type="objectList" id="~{n,HnUnNt-t[?[]ovOE">
-                  <field name="FIELDNAME">&lt;none&gt;</field>
-                </shadow>
-                <block type="lists_getIndex" id=";^QDLOK6*0SUUKxO!]pu">
-                  <mutation statement="false" at="true"/>
-                  <field name="MODE">GET</field>
-                  <field name="WHERE">FROM_START</field>
-                  <value name="VALUE">
-                    <block type="variables_get" id="jax]4Vmw*TfL?[8mt;K!">
-                      <field name="VAR" id="{bk^|d9BW-CKU4mtG{UL">checkPoints</field>
-                    </block>
-                  </value>
-                  <value name="AT">
-                    <block type="math_random_int" id="-5AwO|:SU!fFM]JXz,l3">
-                      <value name="FROM">
-                        <shadow type="math_number" id="nM;39uZ2{$tH`}iNdjZq">
-                          <field name="NUM">0</field>
-                        </shadow>
-                      </value>
-                      <value name="TO">
-                        <shadow type="math_number" id="u!jvx0BU4l28);M%z7:{">
-                          <field name="NUM">2</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                </block>
-              </value>
-            </block>
-          </statement>
-        </block>
-      </next>
-    </block>
-  </tab>
-  <editorsettings viewport-x="914" viewport-y="107" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="804" viewport-y="57" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

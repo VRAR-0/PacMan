@@ -403,7 +403,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="level" type="SecondaryTab" active="false" scrollx="-54.00587247332578" scrolly="-112.06032081465747" scale="0.8227024747918814">
+  <tab name="level" type="SecondaryTab" active="false" scrollx="-54.00587247332578" scrolly="-112.06032081465742" scale="0.8227024747918814">
     <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsBody" id="snREN-~!K9EPOW4iTMoc" x="150" y="170">
       <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
       <field name="TYPE">STATIC</field>
@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="-23.747467041015625" scrolly="69.65913391113293" scale="0.7120883389758572">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="-23.747467041015625" scrolly="69.65913391113281" scale="0.7120883389758572">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">checkPoints</variable>
     </variables>
