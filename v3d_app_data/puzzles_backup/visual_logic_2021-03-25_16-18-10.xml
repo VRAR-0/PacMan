@@ -940,11 +940,9 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="15.568859100341797" scrolly="213.0166778564453" scale="0.9070294784580498">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="-107.58282947540283" scrolly="132.25338745117188" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
-      <variable id="z-yVO_v[EPagqK8m2/}I" type="">CheckPointsCoins</variable>
-      <variable id="Z4{w[ka|KiEc`BzD,/oP" type="">CloneCoin</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="v]w]aNnK_+;X;xEisC/h" x="70" y="110">
       <field name="VAR" id="{bk^|d9BW-CKU4mtG{UL">CheckPointsPhones</field>
@@ -1009,7 +1007,7 @@
                       </value>
                       <value name="TO">
                         <shadow type="math_number" id="u!jvx0BU4l28);M%z7:{">
-                          <field name="NUM">3</field>
+                          <field name="NUM">2</field>
                         </shadow>
                       </value>
                     </block>
@@ -1018,130 +1016,6 @@
               </value>
             </block>
           </statement>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="mmUpZgvTnC:wPW]UEGm|" x="170" y="370">
-      <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
-      <value name="VALUE">
-        <block type="lists_create_with" id="CDfR/eo#jx;0Cyl$)r[5">
-          <mutation items="8"/>
-          <value name="ADD0">
-            <block type="objectList" id="2qo;Fyg:+@NSJBZGuDb{">
-              <field name="FIELDNAME">CheckPoint1</field>
-            </block>
-          </value>
-          <value name="ADD1">
-            <block type="objectList" id="AeA_qfUnq_yHVObE-${!">
-              <field name="FIELDNAME">CheckPoint2</field>
-            </block>
-          </value>
-          <value name="ADD2">
-            <block type="objectList" id="!z|D)l6%kvxQ)8fdP8Ig">
-              <field name="FIELDNAME">CheckPoint3</field>
-            </block>
-          </value>
-          <value name="ADD3">
-            <block type="objectList" id="Bh_rKRsZ`W%}FYdt?tU9">
-              <field name="FIELDNAME">CheckPoint4</field>
-            </block>
-          </value>
-          <value name="ADD4">
-            <block type="objectList" id="xEVYzzry`DZ-{,J7z[Fv">
-              <field name="FIELDNAME">CheckPoint5</field>
-            </block>
-          </value>
-          <value name="ADD5">
-            <block type="objectList" id="eGFncJ6~_;HA#^5[mDZj">
-              <field name="FIELDNAME">CheckPoint6</field>
-            </block>
-          </value>
-          <value name="ADD6">
-            <block type="objectList" id="ycb~MiU/|o9-ZIC,X8qB">
-              <field name="FIELDNAME">CheckPoint7</field>
-            </block>
-          </value>
-          <value name="ADD7">
-            <block type="objectList" id="#=+=/.,kiv5c{w#aJ5XO">
-              <field name="FIELDNAME">CheckPoint8</field>
-            </block>
-          </value>
-        </block>
-      </value>
-      <next>
-        <block type="playAnimationAdv" id="g@yb;zuwP-KGj91aVXAw">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
-          <field name="REVERSED">FALSE</field>
-          <field name="LOOP">AUTO</field>
-          <value name="VALUE">
-            <shadow type="animationList" id="P^Y0}]e?0n?aI?`m*O`h">
-              <field name="FIELDNAME">&lt;none&gt;</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="controls_repeat_ext" id="3IY(@B[pEJBH92;)3cBd">
-              <value name="TIMES">
-                <shadow type="math_number" id=",zgsVaPaXl8?j]!p!0k,">
-                  <field name="NUM">8</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="variables_set" id="C9204fheC~.ry+{_v$!v">
-                  <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
-                  <value name="VALUE">
-                    <block type="cloneObject" id="dPW69Z5.]`v#zmpLE;BJ">
-                      <value name="OBJECTINPUT">
-                        <shadow type="objectList" id="SuKEW9@y:GV,N7pWqvJT">
-                          <field name="FIELDNAME">coin</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="snapToObject" id="%z^@z%2SF]Nq*nY)l`=.">
-                      <value name="SNAPWHAT">
-                        <shadow type="objectList" id="M}^#?BYFMbGjm@Pn@+/4">
-                          <field name="FIELDNAME">coin</field>
-                        </shadow>
-                        <block type="variables_get" id="]?c%5F=:XKwPO;t#/!cl">
-                          <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
-                        </block>
-                      </value>
-                      <value name="SNAPTO">
-                        <shadow type="objectList">
-                          <field name="FIELDNAME">&lt;none&gt;</field>
-                        </shadow>
-                        <block type="lists_getIndex" id="@a+8r,lQTf8N:$*Q~SP~">
-                          <mutation statement="false" at="true"/>
-                          <field name="MODE">GET</field>
-                          <field name="WHERE">FROM_START</field>
-                          <value name="VALUE">
-                            <block type="variables_get" id="3c=5FXl+%?!e}j~Hu%rq">
-                              <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
-                            </block>
-                          </value>
-                          <value name="AT">
-                            <block type="math_random_int" id="%qS|0o=,xR)TFW~72-R#">
-                              <value name="FROM">
-                                <shadow type="math_number" id=":QwVy0XdpT?w|RmmA$-$">
-                                  <field name="NUM">0</field>
-                                </shadow>
-                              </value>
-                              <value name="TO">
-                                <shadow type="math_number" id="Pegg}OstR(@[G!tm(MBY">
-                                  <field name="NUM">7</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
-                </block>
-              </statement>
-            </block>
-          </next>
         </block>
       </next>
     </block>
