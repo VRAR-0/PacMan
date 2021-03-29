@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="148.42359585204395" scrolly="-207.43699829397883" scale="0.7462153966366274">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="404.1904754638672" scrolly="-792.9478454589844" scale="0.9070294784580498">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
     </variables>
@@ -1057,22 +1057,22 @@
                             </shadow>
                           </value>
                           <next>
-                            <block type="createPhysicsBody" id="+:P#9}.%`V^BONBA4Opy">
+                            <block type="createPhysicsBody" id="L?~~=,ia8=GqL/;~K3lh">
                               <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
                               <field name="TYPE">STATIC</field>
                               <field name="SHAPE">BOX</field>
                               <value name="OBJECT">
-                                <shadow type="objectList" id="*CN?XlLHq?988Rb`1?N2">
-                                  <field name="FIELDNAME">coin.5</field>
+                                <shadow type="objectList" id="E}k:Uk;+M397r_rQ2O2#">
+                                  <field name="FIELDNAME">coin.4</field>
                                 </shadow>
                               </value>
                               <next>
-                                <block type="createPhysicsBody" id="V/c/qqw,Z!Vj9VWaHR=P">
+                                <block type="createPhysicsBody" id="+:P#9}.%`V^BONBA4Opy">
                                   <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
                                   <field name="TYPE">STATIC</field>
                                   <field name="SHAPE">BOX</field>
                                   <value name="OBJECT">
-                                    <shadow type="objectList" id="s2P`}sox_6:AdCWyUI+6">
+                                    <shadow type="objectList" id="*CN?XlLHq?988Rb`1?N2">
                                       <field name="FIELDNAME">coin6</field>
                                     </shadow>
                                   </value>
@@ -1091,7 +1091,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="130" y="610">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="70" y="590">
       <value name="OBJECT_A">
         <shadow type="objectList" id="9+BH{4dz-U0lhS9gJ+xD">
           <field name="FIELDNAME">PacMan</field>
@@ -1336,7 +1336,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="M3ipUc]$5aC0V.ATW?IB" x="90" y="1330">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="M3ipUc]$5aC0V.ATW?IB" x="90" y="1310">
       <value name="OBJECT_A">
         <shadow type="objectList" id="C*u!Gt0.|#_}^|#;B}tn">
           <field name="FIELDNAME">PacMan</field>
