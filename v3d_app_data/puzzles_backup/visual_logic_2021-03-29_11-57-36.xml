@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="875.0000000000001" scrolly="465.49999999999994" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000005" scrolly="465.5000000000009" scale="0.9">
+  <tab name="init" type="InitTab" active="false" scrollx="875.0000000000001" scrolly="465.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="false" scrollx="875.0000000000005" scrolly="465.5000000000002" scale="0.9">
     <block xmlns="https://developers.google.com/blockly/xml" type="createPhysicsWorld" id="$W{X?~3#=0z[;64u3[n/" x="-930" y="-430">
       <field name="SOFT_BODY">FALSE</field>
       <value name="GRAVITY">
@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="false" scrollx="29.358337402343295" scrolly="3.3838958740233807" scale="0.7120883389758572">
+  <tab name="player" type="SecondaryTab" active="false" scrollx="29.35833740234341" scrolly="3.3838958740233807" scale="0.7120883389758572">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -940,9 +940,11 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="23.328887939453125" scrolly="70.74717712402344" scale="0.9070294784580498">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="-96.67240142822266" scrolly="-23.746238708496094" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
+      <variable id="z-yVO_v[EPagqK8m2/}I" type="">CheckPointsCoins</variable>
+      <variable id="Z4{w[ka|KiEc`BzD,/oP" type="">CloneCoin</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="v]w]aNnK_+;X;xEisC/h" x="70" y="110">
       <field name="VAR" id="{bk^|d9BW-CKU4mtG{UL">CheckPointsPhones</field>
@@ -1016,137 +1018,132 @@
               </value>
             </block>
           </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="mmUpZgvTnC:wPW]UEGm|" x="170" y="370">
+      <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="CDfR/eo#jx;0Cyl$)r[5">
+          <mutation items="8"/>
+          <value name="ADD0">
+            <block type="objectList" id="2qo;Fyg:+@NSJBZGuDb{">
+              <field name="FIELDNAME">CheckPoint1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="AeA_qfUnq_yHVObE-${!">
+              <field name="FIELDNAME">CheckPoint2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="!z|D)l6%kvxQ)8fdP8Ig">
+              <field name="FIELDNAME">CheckPoint3</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="objectList" id="Bh_rKRsZ`W%}FYdt?tU9">
+              <field name="FIELDNAME">CheckPoint4</field>
+            </block>
+          </value>
+          <value name="ADD4">
+            <block type="objectList" id="xEVYzzry`DZ-{,J7z[Fv">
+              <field name="FIELDNAME">CheckPoint5</field>
+            </block>
+          </value>
+          <value name="ADD5">
+            <block type="objectList" id="eGFncJ6~_;HA#^5[mDZj">
+              <field name="FIELDNAME">CheckPoint6</field>
+            </block>
+          </value>
+          <value name="ADD6">
+            <block type="objectList" id="ycb~MiU/|o9-ZIC,X8qB">
+              <field name="FIELDNAME">CheckPoint7</field>
+            </block>
+          </value>
+          <value name="ADD7">
+            <block type="objectList" id="#=+=/.,kiv5c{w#aJ5XO">
+              <field name="FIELDNAME">CheckPoint8</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="playAnimationAdv" id="g@yb;zuwP-KGj91aVXAw">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">AUTO</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="P^Y0}]e?0n?aI?`m*O`h">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+          </value>
           <next>
-            <block type="createPhysicsBody" id="+e**JNCchIjE[I=:yaQg">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-              <field name="TYPE">STATIC</field>
-              <field name="SHAPE">BOX</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="zO-n.74YukST(l3$9/9C">
-                  <field name="FIELDNAME">coin1</field>
+            <block type="controls_repeat_ext" id="3IY(@B[pEJBH92;)3cBd">
+              <value name="TIMES">
+                <shadow type="math_number" id=",zgsVaPaXl8?j]!p!0k,">
+                  <field name="NUM">8</field>
                 </shadow>
               </value>
-              <next>
-                <block type="createPhysicsBody" id="^rU_b}4G5-U43V`^^B1t">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                  <field name="TYPE">STATIC</field>
-                  <field name="SHAPE">BOX</field>
-                  <value name="OBJECT">
-                    <shadow type="objectList" id="dNuCm{)hS7FHh_W]|G$-">
-                      <field name="FIELDNAME">coin2</field>
-                    </shadow>
-                  </value>
-                  <next>
-                    <block type="createPhysicsBody" id="9AC_=49M1f4CnJ^nN5a$">
-                      <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                      <field name="TYPE">STATIC</field>
-                      <field name="SHAPE">BOX</field>
-                      <value name="OBJECT">
-                        <shadow type="objectList" id="L!RNKLB6o?Bw8jVITWPS">
-                          <field name="FIELDNAME">coin3</field>
+              <statement name="DO">
+                <block type="variables_set" id="C9204fheC~.ry+{_v$!v">
+                  <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
+                  <value name="VALUE">
+                    <block type="cloneObject" id="dPW69Z5.]`v#zmpLE;BJ">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="SuKEW9@y:GV,N7pWqvJT">
+                          <field name="FIELDNAME">coin</field>
                         </shadow>
                       </value>
-                      <next>
-                        <block type="createPhysicsBody" id="Pp%-{!^Omv!3@;2wc]F3">
-                          <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                          <field name="TYPE">STATIC</field>
-                          <field name="SHAPE">BOX</field>
-                          <value name="OBJECT">
-                            <shadow type="objectList" id=";0aDtrQe]osu$siUzX,a">
-                              <field name="FIELDNAME">coin.4</field>
-                            </shadow>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="snapToObject" id="%z^@z%2SF]Nq*nY)l`=.">
+                      <value name="SNAPWHAT">
+                        <shadow type="objectList" id="M}^#?BYFMbGjm@Pn@+/4">
+                          <field name="FIELDNAME">coin</field>
+                        </shadow>
+                        <block type="variables_get" id="]?c%5F=:XKwPO;t#/!cl">
+                          <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
+                        </block>
+                      </value>
+                      <value name="SNAPTO">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_getIndex" id="@a+8r,lQTf8N:$*Q~SP~">
+                          <mutation statement="false" at="true"/>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="3c=5FXl+%?!e}j~Hu%rq">
+                              <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
+                            </block>
                           </value>
-                          <next>
-                            <block type="createPhysicsBody" id="L?~~=,ia8=GqL/;~K3lh">
-                              <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                              <field name="TYPE">STATIC</field>
-                              <field name="SHAPE">BOX</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="E}k:Uk;+M397r_rQ2O2#">
-                                  <field name="FIELDNAME">coin.4</field>
+                          <value name="AT">
+                            <block type="math_random_int" id="%qS|0o=,xR)TFW~72-R#">
+                              <value name="FROM">
+                                <shadow type="math_number" id=":QwVy0XdpT?w|RmmA$-$">
+                                  <field name="NUM">0</field>
                                 </shadow>
                               </value>
-                              <next>
-                                <block type="createPhysicsBody" id="+:P#9}.%`V^BONBA4Opy">
-                                  <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
-                                  <field name="TYPE">STATIC</field>
-                                  <field name="SHAPE">BOX</field>
-                                  <value name="OBJECT">
-                                    <shadow type="objectList" id="*CN?XlLHq?988Rb`1?N2">
-                                      <field name="FIELDNAME">coin6</field>
-                                    </shadow>
-                                  </value>
-                                </block>
-                              </next>
+                              <value name="TO">
+                                <shadow type="math_number" id="Pegg}OstR(@[G!tm(MBY">
+                                  <field name="NUM">7</field>
+                                </shadow>
+                              </value>
                             </block>
-                          </next>
+                          </value>
                         </block>
-                      </next>
+                      </value>
                     </block>
                   </next>
                 </block>
-              </next>
+              </statement>
             </block>
           </next>
         </block>
       </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="370" y="590">
-      <value name="OBJECT_A">
-        <shadow type="objectList" id="9+BH{4dz-U0lhS9gJ+xD">
-          <field name="FIELDNAME">PacMan</field>
-        </shadow>
-      </value>
-      <value name="OBJECT_B">
-        <shadow type="objectList" id="rf@GhpU:WY:!1PWst*pT">
-          <field name="FIELDNAME">coin1</field>
-        </shadow>
-      </value>
-      <statement name="COLLIDE_DO">
-        <block type="hide" id="mC0+9t40rh.Mub)/(eJi">
-          <value name="VALUE">
-            <shadow type="objectList" id="C@1WYj|@{.G+[SMv-vMF">
-              <field name="FIELDNAME">Instance_coin1_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="BIU{Z^N6-fERRk~[Um-?">
-              <field name="NEW_STATE">DISABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="4^,gI*8CG+2;(7`bum{N">
-                  <field name="FIELDNAME">coin1</field>
-                </shadow>
-              </value>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="E:X,L+.okmTO;zYFRU.H" x="-10" y="630">
-      <value name="VALUE">
-        <shadow type="math_number" id="W57My,Nom!sKjDTgq1%M">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-      <statement name="DO">
-        <block type="show" id="P#@3imBBxEzURrDK}DHi">
-          <value name="VALUE">
-            <shadow type="objectList" id="?3-XGxkd1;PGqmfk7SCd">
-              <field name="FIELDNAME">Instance_coin1_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="9!S}TJmAz.GO`WhLzx;[">
-              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="!1fujgC9=#SEUtLy00:.">
-                  <field name="FIELDNAME">coin1</field>
-                </shadow>
-              </value>
-            </block>
-          </next>
-        </block>
-      </statement>
     </block>
   </tab>
   <editorsettings viewport-x="1136" viewport-y="41" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
