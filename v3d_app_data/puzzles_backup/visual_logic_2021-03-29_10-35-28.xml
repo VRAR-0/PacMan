@@ -940,12 +940,22 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="-96.67240142822266" scrolly="-23.746238708496094" scale="1">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="16.83154296875" scrolly="215.96298217773438" scale="0.9070294784580498">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
       <variable id="z-yVO_v[EPagqK8m2/}I" type="">CheckPointsCoins</variable>
       <variable id="Z4{w[ka|KiEc`BzD,/oP" type="">CloneCoin</variable>
     </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="playAnimationAdv" id="z5[gqR7yUF~u@]]pK2Yz" x="130" y="-70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+      <field name="REVERSED">FALSE</field>
+      <field name="LOOP">AUTO</field>
+      <value name="VALUE">
+        <shadow type="animationList" id="XEsCZY137eC[Ad:zpEP:">
+          <field name="FIELDNAME">coin</field>
+        </shadow>
+      </value>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="v]w]aNnK_+;X;xEisC/h" x="70" y="110">
       <field name="VAR" id="{bk^|d9BW-CKU4mtG{UL">CheckPointsPhones</field>
       <value name="VALUE">
