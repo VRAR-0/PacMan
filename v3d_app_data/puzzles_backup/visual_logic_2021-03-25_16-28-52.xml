@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="15.568859100341797" scrolly="213.0166778564453" scale="0.9070294784580498">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="22.568859100341797" scrolly="212.0166778564453" scale="0.9070294784580498">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
       <variable id="z-yVO_v[EPagqK8m2/}I" type="">CheckPointsCoins</variable>
@@ -1069,81 +1069,55 @@
         </block>
       </value>
       <next>
-        <block type="playAnimationAdv" id="g@yb;zuwP-KGj91aVXAw">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
-          <field name="REVERSED">FALSE</field>
-          <field name="LOOP">AUTO</field>
-          <value name="VALUE">
-            <shadow type="animationList" id="P^Y0}]e?0n?aI?`m*O`h">
+        <block type="snapToObject" id="%z^@z%2SF]Nq*nY)l`=.">
+          <value name="SNAPWHAT">
+            <shadow type="objectList" id="M}^#?BYFMbGjm@Pn@+/4">
+              <field name="FIELDNAME">coin</field>
+            </shadow>
+          </value>
+          <value name="SNAPTO">
+            <shadow type="objectList">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="lists_getIndex" id="@a+8r,lQTf8N:$*Q~SP~">
+              <mutation statement="false" at="true"/>
+              <field name="MODE">GET</field>
+              <field name="WHERE">FROM_START</field>
+              <value name="VALUE">
+                <block type="variables_get" id="3c=5FXl+%?!e}j~Hu%rq">
+                  <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
+                </block>
+              </value>
+              <value name="AT">
+                <block type="math_random_int" id="%qS|0o=,xR)TFW~72-R#">
+                  <value name="FROM">
+                    <shadow type="math_number" id=":QwVy0XdpT?w|RmmA$-$">
+                      <field name="NUM">0</field>
+                    </shadow>
+                  </value>
+                  <value name="TO">
+                    <shadow type="math_number" id="Pegg}OstR(@[G!tm(MBY">
+                      <field name="NUM">7</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C9204fheC~.ry+{_v$!v" x="750" y="450">
+      <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
+      <value name="VALUE">
+        <block type="cloneObject" id="dPW69Z5.]`v#zmpLE;BJ">
+          <value name="OBJECTINPUT">
+            <shadow type="objectList" id="SuKEW9@y:GV,N7pWqvJT">
               <field name="FIELDNAME">&lt;none&gt;</field>
             </shadow>
           </value>
-          <next>
-            <block type="controls_repeat_ext" id="3IY(@B[pEJBH92;)3cBd">
-              <value name="TIMES">
-                <shadow type="math_number" id=",zgsVaPaXl8?j]!p!0k,">
-                  <field name="NUM">8</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="variables_set" id="C9204fheC~.ry+{_v$!v">
-                  <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
-                  <value name="VALUE">
-                    <block type="cloneObject" id="dPW69Z5.]`v#zmpLE;BJ">
-                      <value name="OBJECTINPUT">
-                        <shadow type="objectList" id="SuKEW9@y:GV,N7pWqvJT">
-                          <field name="FIELDNAME">coin</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="snapToObject" id="%z^@z%2SF]Nq*nY)l`=.">
-                      <value name="SNAPWHAT">
-                        <shadow type="objectList" id="M}^#?BYFMbGjm@Pn@+/4">
-                          <field name="FIELDNAME">coin</field>
-                        </shadow>
-                        <block type="variables_get" id="]?c%5F=:XKwPO;t#/!cl">
-                          <field name="VAR" id="Z4{w[ka|KiEc`BzD,/oP">CloneCoin</field>
-                        </block>
-                      </value>
-                      <value name="SNAPTO">
-                        <shadow type="objectList">
-                          <field name="FIELDNAME">&lt;none&gt;</field>
-                        </shadow>
-                        <block type="lists_getIndex" id="@a+8r,lQTf8N:$*Q~SP~">
-                          <mutation statement="false" at="true"/>
-                          <field name="MODE">GET</field>
-                          <field name="WHERE">FROM_START</field>
-                          <value name="VALUE">
-                            <block type="variables_get" id="3c=5FXl+%?!e}j~Hu%rq">
-                              <field name="VAR" id="z-yVO_v[EPagqK8m2/}I">CheckPointsCoins</field>
-                            </block>
-                          </value>
-                          <value name="AT">
-                            <block type="math_random_int" id="%qS|0o=,xR)TFW~72-R#">
-                              <value name="FROM">
-                                <shadow type="math_number" id=":QwVy0XdpT?w|RmmA$-$">
-                                  <field name="NUM">0</field>
-                                </shadow>
-                              </value>
-                              <value name="TO">
-                                <shadow type="math_number" id="Pegg}OstR(@[G!tm(MBY">
-                                  <field name="NUM">7</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
-                </block>
-              </statement>
-            </block>
-          </next>
         </block>
-      </next>
+      </value>
     </block>
   </tab>
   <editorsettings viewport-x="1136" viewport-y="41" viewport-w="768" viewport-h="503.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
