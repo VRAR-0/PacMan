@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="148.42359585204395" scrolly="-207.43699829397883" scale="0.7462153966366274">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="278.26751708984375" scrolly="6.66748046875" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
     </variables>

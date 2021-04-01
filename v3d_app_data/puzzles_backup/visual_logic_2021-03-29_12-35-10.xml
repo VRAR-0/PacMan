@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="148.42359585204395" scrolly="-207.43699829397883" scale="0.7462153966366274">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="-143.50340270996094" scrolly="-385.74603271484375" scale="0.9070294784580498">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
     </variables>
@@ -1057,22 +1057,22 @@
                             </shadow>
                           </value>
                           <next>
-                            <block type="createPhysicsBody" id="+:P#9}.%`V^BONBA4Opy">
+                            <block type="createPhysicsBody" id="L?~~=,ia8=GqL/;~K3lh">
                               <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
                               <field name="TYPE">STATIC</field>
                               <field name="SHAPE">BOX</field>
                               <value name="OBJECT">
-                                <shadow type="objectList" id="*CN?XlLHq?988Rb`1?N2">
-                                  <field name="FIELDNAME">coin.5</field>
+                                <shadow type="objectList" id="E}k:Uk;+M397r_rQ2O2#">
+                                  <field name="FIELDNAME">coin.4</field>
                                 </shadow>
                               </value>
                               <next>
-                                <block type="createPhysicsBody" id="V/c/qqw,Z!Vj9VWaHR=P">
+                                <block type="createPhysicsBody" id="+:P#9}.%`V^BONBA4Opy">
                                   <mutation xmlns="http://www.w3.org/1999/xhtml" body_type="STATIC"></mutation>
                                   <field name="TYPE">STATIC</field>
                                   <field name="SHAPE">BOX</field>
                                   <value name="OBJECT">
-                                    <shadow type="objectList" id="s2P`}sox_6:AdCWyUI+6">
+                                    <shadow type="objectList" id="*CN?XlLHq?988Rb`1?N2">
                                       <field name="FIELDNAME">coin6</field>
                                     </shadow>
                                   </value>
@@ -1091,7 +1091,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="130" y="610">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="70" y="590">
       <value name="OBJECT_A">
         <shadow type="objectList" id="9+BH{4dz-U0lhS9gJ+xD">
           <field name="FIELDNAME">PacMan</field>
@@ -1269,130 +1269,6 @@
                   </next>
                 </block>
               </next>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="PLoQ(aaCbuD*CTLTaC+g" x="90" y="970">
-      <value name="OBJECT_A">
-        <shadow type="objectList" id="SD*v3=EUj;Y3Em5a}-Sh">
-          <field name="FIELDNAME">PacMan</field>
-        </shadow>
-      </value>
-      <value name="OBJECT_B">
-        <shadow type="objectList" id="g{UOFop,V((YDHh0|H/A">
-          <field name="FIELDNAME">coin3</field>
-        </shadow>
-      </value>
-      <statement name="COLLIDE_DO">
-        <block type="hide" id="}9~0$)*)la~.0)2T-p*;">
-          <value name="VALUE">
-            <shadow type="objectList" id="/v:L-D[Jx?-}/kkU.4Xj">
-              <field name="FIELDNAME">Instance_coin3_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="l.196rvQ+DQ6e{,r)%R4">
-              <field name="NEW_STATE">DISABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="Vdv9z$.R7~jn@5U;#Y.v">
-                  <field name="FIELDNAME">coin3</field>
-                </shadow>
-              </value>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="q^Na7}p|BbXf3-+0f@ka" x="110" y="1150">
-      <value name="OBJECT_A">
-        <shadow type="objectList" id="g[*/Sxf85sDQJ_FXG,%W">
-          <field name="FIELDNAME">PacMan</field>
-        </shadow>
-      </value>
-      <value name="OBJECT_B">
-        <shadow type="objectList" id="[[DKckr%Y11HI~1E.HXu">
-          <field name="FIELDNAME">coin.4</field>
-        </shadow>
-      </value>
-      <statement name="COLLIDE_DO">
-        <block type="hide" id="aPF2K*t3`g.wa{}-}dHf">
-          <value name="VALUE">
-            <shadow type="objectList" id="GQqr|:$#b`nt,q3WB_ut">
-              <field name="FIELDNAME">Instance_coin.4_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="p#xUxX`Ur4h;x8CrmPyu">
-              <field name="NEW_STATE">DISABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="2vJB{V^iDj`}.78na!?4">
-                  <field name="FIELDNAME">coin.4</field>
-                </shadow>
-              </value>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="M3ipUc]$5aC0V.ATW?IB" x="90" y="1330">
-      <value name="OBJECT_A">
-        <shadow type="objectList" id="C*u!Gt0.|#_}^|#;B}tn">
-          <field name="FIELDNAME">PacMan</field>
-        </shadow>
-      </value>
-      <value name="OBJECT_B">
-        <shadow type="objectList" id="IdcZ)bv1B$w@|,m6W;5P">
-          <field name="FIELDNAME">coin.5</field>
-        </shadow>
-      </value>
-      <statement name="COLLIDE_DO">
-        <block type="hide" id="q3V=:vE/R%*W1jww*6/K">
-          <value name="VALUE">
-            <shadow type="objectList" id="+Ro;FM;_X-V-9k/X]w*S">
-              <field name="FIELDNAME">Instance_coin.5_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="kT*Jj*4;L,RGtBPV9nn|">
-              <field name="NEW_STATE">DISABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="wuFvdcuNcPCB)i0d8zJG">
-                  <field name="FIELDNAME">coin.5</field>
-                </shadow>
-              </value>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id=")jvU(%,mL+:h%~?cqvQ3" x="90" y="1530">
-      <value name="OBJECT_A">
-        <shadow type="objectList" id=":`J8u_0uo*!bds?9X!%m">
-          <field name="FIELDNAME">PacMan</field>
-        </shadow>
-      </value>
-      <value name="OBJECT_B">
-        <shadow type="objectList" id="FQ(JxD{uz~TD#+zA%Na7">
-          <field name="FIELDNAME">coin6</field>
-        </shadow>
-      </value>
-      <statement name="COLLIDE_DO">
-        <block type="hide" id="9kkRtOXg!=f;=3Wc9mqX">
-          <value name="VALUE">
-            <shadow type="objectList" id="Iwb8$tK+NJSlg^68x#B?">
-              <field name="FIELDNAME">Instance_coin6_coin_mesh</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setBodyState" id="LNXBYvW1U2vy|y.vcdb)">
-              <field name="NEW_STATE">DISABLE_SIMULATION</field>
-              <value name="OBJECT">
-                <shadow type="objectList" id="+Nj35k_ZnTjfy5h]NZE3">
-                  <field name="FIELDNAME">coin6</field>
-                </shadow>
-              </value>
             </block>
           </next>
         </block>
