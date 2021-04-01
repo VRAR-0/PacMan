@@ -940,7 +940,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="items" type="SecondaryTab" active="true" scrollx="46.78004455566406" scrolly="-222.9637222290039" scale="0.9070294784580498">
+  <tab name="items" type="SecondaryTab" active="true" scrollx="148.42359585204395" scrolly="-207.43699829397883" scale="0.7462153966366274">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="{bk^|d9BW-CKU4mtG{UL" type="">CheckPointsPhones</variable>
     </variables>
@@ -1091,7 +1091,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="630" y="490">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="y@:o(_~I+RvTxqdP5x/a" x="130" y="610">
       <value name="OBJECT_A">
         <shadow type="objectList" id="9+BH{4dz-U0lhS9gJ+xD">
           <field name="FIELDNAME">PacMan</field>
@@ -1117,55 +1117,12 @@
                   <field name="FIELDNAME">coin1</field>
                 </shadow>
               </value>
-              <next>
-                <block type="playSound" id="s(UwR1+!P5E-|c_Gl]21">
-                  <field name="LOOP">FALSE</field>
-                  <value name="VALUE">
-                    <block type="loadSoundAdv" id="OFDZ$6:i)-`L=5q9ux?S">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="3e`douojKry-K8m1Hq+o">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setTimeout" id="]?_{l$c4^.S!j|(r|sdT">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="Gd%{Z(9C5M11E^mVB?O.">
-                          <field name="NUM">10</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="show" id=";?~Q1Q/H0(Qr,5iF`4:d">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="XoauRQdF`T,h$7Oa|!]n">
-                              <field name="FIELDNAME">Instance_coin1_coin_mesh</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setBodyState" id="pX:}hGW;I^Ggc]Q!fxvW">
-                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="6F?*NUxf]3~m|d*p*VG4">
-                                  <field name="FIELDNAME">coin1</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </next>
-                </block>
-              </next>
             </block>
           </next>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="vN]ut%K6GspgTWwf/{]u" x="110" y="590">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="vN]ut%K6GspgTWwf/{]u" x="90" y="770">
       <value name="OBJECT_A">
         <shadow type="objectList" id="osU{_1iZIT}6X6qEnT?=">
           <field name="FIELDNAME">PacMan</field>
@@ -1191,45 +1148,123 @@
                   <field name="FIELDNAME">coin2</field>
                 </shadow>
               </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="E:X,L+.okmTO;zYFRU.H" x="790" y="790">
+      <value name="VALUE">
+        <shadow type="math_number" id="W57My,Nom!sKjDTgq1%M">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="P#@3imBBxEzURrDK}DHi">
+          <value name="VALUE">
+            <shadow type="objectList" id="?3-XGxkd1;PGqmfk7SCd">
+              <field name="FIELDNAME">Instance_coin1_coin_mesh</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setBodyState" id="9!S}TJmAz.GO`WhLzx;[">
+              <field name="NEW_STATE">ENABLE_SIMULATION</field>
+              <value name="OBJECT">
+                <shadow type="objectList" id="!1fujgC9=#SEUtLy00:.">
+                  <field name="FIELDNAME">coin1</field>
+                </shadow>
+              </value>
               <next>
-                <block type="playSound" id="5.e%X#z,#J2HCYNSp#V6">
-                  <field name="LOOP">FALSE</field>
+                <block type="show" id="|M}m:R9Hzr)]n$5MQ2#B">
                   <value name="VALUE">
-                    <block type="loadSoundAdv" id="T@8WW:4/J{%T:,/)9=V$">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="PBLG;^A2.8a#|bIrm}NL">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
+                    <shadow type="objectList" id="?:W*Y%^7}i9h969Z4TzS">
+                      <field name="FIELDNAME">Instance_coin2_coin_mesh</field>
+                    </shadow>
                   </value>
                   <next>
-                    <block type="setTimeout" id="4Tk/]AFV|:R7B%neh2U*">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="=Ta8TN:+OxLsM.e5baND">
-                          <field name="NUM">10</field>
+                    <block type="setBodyState" id="{I@Zrm`j]m{+*2K(X1K;">
+                      <field name="NEW_STATE">ENABLE_SIMULATION</field>
+                      <value name="OBJECT">
+                        <shadow type="objectList" id="`FBIdK(p$e(jMIKrv[f0">
+                          <field name="FIELDNAME">coin2</field>
                         </shadow>
                       </value>
-                      <statement name="DO">
-                        <block type="show" id="p`p/^y!VA$Y$zLx|.;f%">
+                      <next>
+                        <block type="show" id="CDRsHH(d?/.rgLfI]8W!">
                           <value name="VALUE">
-                            <shadow type="objectList" id="lyd|Mu)uL8r:-r};MF~2">
-                              <field name="FIELDNAME">Instance_coin2_coin_mesh</field>
+                            <shadow type="objectList" id="tObOZd{zgopR);mGIVR;">
+                              <field name="FIELDNAME">Instance_coin3_coin_mesh</field>
                             </shadow>
                           </value>
                           <next>
-                            <block type="setBodyState" id="gcG(Avt!dRhCc1A?h`~f">
+                            <block type="setBodyState" id="AS8Y6fjy/;3s;aK2G+m1">
                               <field name="NEW_STATE">ENABLE_SIMULATION</field>
                               <value name="OBJECT">
-                                <shadow type="objectList" id="_-9o*M;%WBNiQd4fifN-">
-                                  <field name="FIELDNAME">coin2</field>
+                                <shadow type="objectList" id="u(V[u:`B!38-)it5j*Q+">
+                                  <field name="FIELDNAME">coin3</field>
                                 </shadow>
                               </value>
+                              <next>
+                                <block type="show" id="|63jV_Ni9fF,i|ljbb+Y">
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="g[}.ik`=J-kKTGyR,1]h">
+                                      <field name="FIELDNAME">Instance_coin.4_coin_mesh</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setBodyState" id="P[-m!ywcp)7aLZizm2gn">
+                                      <field name="NEW_STATE">ENABLE_SIMULATION</field>
+                                      <value name="OBJECT">
+                                        <shadow type="objectList" id="co/TVmVT^2gI:!VXUNQq">
+                                          <field name="FIELDNAME">coin.4</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="show" id="#iBP=P{9iOAobKPGB_sc">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="OZeln}8|jqi{]([|ml5)">
+                                              <field name="FIELDNAME">Instance_coin.5_coin_mesh</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="setBodyState" id="Rd1$-N!PX*)MoA-}8ur}">
+                                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
+                                              <value name="OBJECT">
+                                                <shadow type="objectList" id="cJ3hd}Myp:j9yljk{IZP">
+                                                  <field name="FIELDNAME">coin.5</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="show" id="Dgo`cT6NzYLZ?:69}T(r">
+                                                  <value name="VALUE">
+                                                    <shadow type="objectList" id="lDEUv[u~rA-UCl~9|lV9">
+                                                      <field name="FIELDNAME">Instance_coin6_coin_mesh</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="setBodyState" id="/k(,5v:6RTmzo!%=qMVF">
+                                                      <field name="NEW_STATE">ENABLE_SIMULATION</field>
+                                                      <value name="OBJECT">
+                                                        <shadow type="objectList" id="jK#t?D!nW}?1oh|)_aB6">
+                                                          <field name="FIELDNAME">coin6</field>
+                                                        </shadow>
+                                                      </value>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
                             </block>
                           </next>
                         </block>
-                      </statement>
+                      </next>
                     </block>
                   </next>
                 </block>
@@ -1239,39 +1274,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="playSound" id="xmjtLqJ+OKc#8Le9Fo4Y" x="-530" y="790">
-      <field name="LOOP">TRUE</field>
-      <value name="VALUE">
-        <block type="loadSoundAdv" id="wu5#F!_GaLv|Np49Q!NY">
-          <field name="TYPE">MUSIC</field>
-          <value name="URL">
-            <shadow type="text" id="*-]BXyjK1[GRU1]FbA2U">
-              <field name="TEXT">./sounds/music.mp3</field>
-            </shadow>
-          </value>
-        </block>
-      </value>
-      <next>
-        <block type="volume" id="^,J$xA^ibe@b6qS)D9Y*">
-          <value name="VALUE">
-            <block type="loadSoundAdv" id="xlgfqNba?)@0M@7`#D4q">
-              <field name="TYPE">MUSIC</field>
-              <value name="URL">
-                <shadow type="text" id="h,Wp$vgIV|5d8A:[[orF">
-                  <field name="TEXT">./sounds/music.mp3</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
-          <value name="VOLUME">
-            <shadow type="math_number" id="T$L)Otu0Kl#c[IVrkdO:">
-              <field name="NUM">0.2</field>
-            </shadow>
-          </value>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="PLoQ(aaCbuD*CTLTaC+g" x="670" y="890">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="PLoQ(aaCbuD*CTLTaC+g" x="90" y="970">
       <value name="OBJECT_A">
         <shadow type="objectList" id="SD*v3=EUj;Y3Em5a}-Sh">
           <field name="FIELDNAME">PacMan</field>
@@ -1297,55 +1300,12 @@
                   <field name="FIELDNAME">coin3</field>
                 </shadow>
               </value>
-              <next>
-                <block type="playSound" id="Y[=n4ga%}+ALRy,t9Y3Z">
-                  <field name="LOOP">FALSE</field>
-                  <value name="VALUE">
-                    <block type="loadSoundAdv" id="}^8MgZbfnn,2^:{b6H-r">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="P?kdnAV=C{zrUW/v~6zt">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setTimeout" id="lpX6Ni5;xOJ^)LvM^6jo">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="C7]q`^Z19vn}@rIaeyW,">
-                          <field name="NUM">10</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="show" id="n|r4$XyR8Mg5m?UXum3W">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="X^U0LIrjv7g~Jaa{.vU4">
-                              <field name="FIELDNAME">Instance_coin3_coin_mesh</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setBodyState" id="O1d%B)Z0e_cGT(ds#r~)">
-                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="[b2;b/BLe}|DF![pfe#e">
-                                  <field name="FIELDNAME">coin3</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </next>
-                </block>
-              </next>
             </block>
           </next>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="q^Na7}p|BbXf3-+0f@ka" x="70" y="930">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="q^Na7}p|BbXf3-+0f@ka" x="110" y="1150">
       <value name="OBJECT_A">
         <shadow type="objectList" id="g[*/Sxf85sDQJ_FXG,%W">
           <field name="FIELDNAME">PacMan</field>
@@ -1371,55 +1331,12 @@
                   <field name="FIELDNAME">coin.4</field>
                 </shadow>
               </value>
-              <next>
-                <block type="playSound" id="]Kie-wF=~-O1p~lq1|3f">
-                  <field name="LOOP">FALSE</field>
-                  <value name="VALUE">
-                    <block type="loadSoundAdv" id="vS@*HA#?=xL3afn^PYgM">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="e3a1,G,u+mR=nBk-%xjp">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setTimeout" id="LJtsmIC%9xMD5Z1!0_8t">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="-+eVmnS@b;?5dXx@dHB,">
-                          <field name="NUM">10</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="show" id="X^~H*(di9}aHcY|24vw0">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="FXc/no9nai@WxWetd$NG">
-                              <field name="FIELDNAME">Instance_coin.4_coin_mesh</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setBodyState" id="}L1^+B]@aq:y.^Y~^:}m">
-                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="V7Y,!P!]/J*=VOBrHC?f">
-                                  <field name="FIELDNAME">coin.4</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </next>
-                </block>
-              </next>
             </block>
           </next>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="M3ipUc]$5aC0V.ATW?IB" x="150" y="1270">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id="M3ipUc]$5aC0V.ATW?IB" x="90" y="1330">
       <value name="OBJECT_A">
         <shadow type="objectList" id="C*u!Gt0.|#_}^|#;B}tn">
           <field name="FIELDNAME">PacMan</field>
@@ -1445,55 +1362,12 @@
                   <field name="FIELDNAME">coin.5</field>
                 </shadow>
               </value>
-              <next>
-                <block type="playSound" id="{w${/AVW~r=Ev#Qju/Cb">
-                  <field name="LOOP">FALSE</field>
-                  <value name="VALUE">
-                    <block type="loadSoundAdv" id="B;8q)tl4nJ1:%9^x2P?$">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="*W#B@;aE/4BB~No@.zuo">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setTimeout" id="OkHXg%p/JK)^jLc*H7j?">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="FROb~B,m0wmgeOV.kZ^p">
-                          <field name="NUM">10</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="show" id="/xc3GJY]K_Z=Dj!Ac!S{">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="S:/*m*2Q%qxr!%6KJpX6">
-                              <field name="FIELDNAME">Instance_coin.5_coin_mesh</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setBodyState" id="V@.!AhpZh+%RWR0*yBbX">
-                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="G6/nrM[iNdqeVM`_E~3#">
-                                  <field name="FIELDNAME">coin.5</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </next>
-                </block>
-              </next>
             </block>
           </next>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id=")jvU(%,mL+:h%~?cqvQ3" x="750" y="1250">
+    <block xmlns="https://developers.google.com/blockly/xml" type="detectCollision" id=")jvU(%,mL+:h%~?cqvQ3" x="90" y="1530">
       <value name="OBJECT_A">
         <shadow type="objectList" id=":`J8u_0uo*!bds?9X!%m">
           <field name="FIELDNAME">PacMan</field>
@@ -1519,49 +1393,6 @@
                   <field name="FIELDNAME">coin6</field>
                 </shadow>
               </value>
-              <next>
-                <block type="playSound" id="xt2LoGT`ACHbo-JU=XV2">
-                  <field name="LOOP">FALSE</field>
-                  <value name="VALUE">
-                    <block type="loadSoundAdv" id="`RxZSt8KzqcQJ.sfkoUz">
-                      <field name="TYPE">MUSIC</field>
-                      <value name="URL">
-                        <shadow type="text" id="aAEcwi.Gvn)a=/yl0iD2">
-                          <field name="TEXT">./sounds/coins.mp3</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <next>
-                    <block type="setTimeout" id="oxheAlXk]H/gBgWDicN,">
-                      <value name="VALUE">
-                        <shadow type="math_number" id="]Lo%6eO2Ty#k%c[PFT]c">
-                          <field name="NUM">10</field>
-                        </shadow>
-                      </value>
-                      <statement name="DO">
-                        <block type="show" id="JA#pG0aqQI$+^}]AzF!~">
-                          <value name="VALUE">
-                            <shadow type="objectList" id="%!zO,!K(K,a5*F^.L,=w">
-                              <field name="FIELDNAME">Instance_coin6_coin_mesh</field>
-                            </shadow>
-                          </value>
-                          <next>
-                            <block type="setBodyState" id="0kl}rx`[Dnx}a)/X(Q|t">
-                              <field name="NEW_STATE">ENABLE_SIMULATION</field>
-                              <value name="OBJECT">
-                                <shadow type="objectList" id="Uc*fcc6{RvTf^l_oRSVu">
-                                  <field name="FIELDNAME">coin6</field>
-                                </shadow>
-                              </value>
-                            </block>
-                          </next>
-                        </block>
-                      </statement>
-                    </block>
-                  </next>
-                </block>
-              </next>
             </block>
           </next>
         </block>
