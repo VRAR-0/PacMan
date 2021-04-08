@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="true" scrollx="-161.14070180887143" scrolly="-192.9987831270264" scale="0.7850773937208823">
+  <tab name="player" type="SecondaryTab" active="true" scrollx="-161.14070180887143" scrolly="-193.90787126179202" scale="0.7850773937208823">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -384,7 +384,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="onSimulationTick" id="Kut6z#)6*jh[~[I3K4T#" x="430" y="850">
+    <block xmlns="https://developers.google.com/blockly/xml" type="onSimulationTick" id="Kut6z#)6*jh[~[I3K4T#" x="410" y="850">
       <field name="TYPE">BEFORE</field>
       <statement name="DO">
         <block type="physicsBodyApplyParam" id="`mj`JILYuwK!H7PpScP#">
@@ -438,14 +438,14 @@
                     </shadow>
                   </value>
                   <next>
-                    <block type="snapToObject" id="P^.W=FQk8b{$qW!q#hQx">
+                    <block type="snapBody" id="]XuFQXh0OQ4iq=)S5Hz(">
                       <value name="SNAPWHAT">
-                        <shadow type="objectList" id="TX|N.K[e(lzs{qe%V?$-">
-                          <field name="FIELDNAME">ghost</field>
+                        <shadow type="objectList" id="0w%iuxoirf@$QusA0MqR">
+                          <field name="FIELDNAME">heart</field>
                         </shadow>
                       </value>
                       <value name="SNAPTO">
-                        <shadow type="objectList" id="5!5n@1ig;,RKuKNqkwx8">
+                        <shadow type="objectList" id="D/ckazF3/7eCS-+]O:`~">
                           <field name="FIELDNAME">CheckPoint14</field>
                         </shadow>
                       </value>
@@ -856,9 +856,6 @@
     </block>
   </tab>
   <tab name="enemy" type="SecondaryTab" active="false" scrollx="49.36740112304642" scrolly="113.68429565429682" scale="0.6260121018585126">
-    <variables xmlns="https://developers.google.com/blockly/xml">
-      <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
-    </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="everyFrame" id="T%SvbOl,cL6AfD!ZNm=," x="10" y="68">
       <statement name="DO">
         <block type="setObjDirection" id="g~SBqOiKBc}bkfQS[#C." inline="false">
@@ -993,66 +990,6 @@
                   </value>
                 </block>
               </value>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="onSimulationTick" id="O%G0WQO*vPo~yK%8I?G%" x="370" y="610">
-      <field name="TYPE">BEFORE</field>
-      <statement name="DO">
-        <block type="physicsBodyApplyParam" id="@?xJ(=vC_HkUi@+|WRQ?">
-          <field name="TYPE">LINEAR_VELOCITY</field>
-          <value name="PARAM">
-            <block type="variables_get" id="V2sJnb[g*rr}?,S`4Y5_">
-              <field name="VAR" id="969V,`Q#~eW/]X:o{U$v">move</field>
-            </block>
-          </value>
-          <value name="OBJECT">
-            <shadow type="objectList" id="KBg3Ezb/^j-n_5pLni_o">
-              <field name="FIELDNAME">PacMan</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="controls_if" id="Fv)r@%=/da4I#Beik|C#">
-              <value name="IF0">
-                <block type="logic_compare" id="tZKppgC9ELe1XbT8WilU">
-                  <field name="OP">LT</field>
-                  <value name="A">
-                    <block type="distanceBetweenObjects" id="-r_6BI.X#NJuKzkblc|6">
-                      <value name="OBJECT1">
-                        <shadow type="objectList" id="]4pG`9^NKQ2(nq+lB9_;">
-                          <field name="FIELDNAME">PacMan</field>
-                        </shadow>
-                      </value>
-                      <value name="OBJECT2">
-                        <shadow type="objectList" id="dm.HmG8g$sX3~(R@axup">
-                          <field name="FIELDNAME">Instance_ghost_ghost_physics</field>
-                        </shadow>
-                      </value>
-                    </block>
-                  </value>
-                  <value name="B">
-                    <block type="math_number" id="NkiH/N4X3VQZd:J;_PQt">
-                      <field name="NUM">1</field>
-                    </block>
-                  </value>
-                </block>
-              </value>
-              <statement name="DO0">
-                <block type="snapBody" id="8V@b#]Not*Or24]#4g8Y">
-                  <value name="SNAPWHAT">
-                    <shadow type="objectList" id="H_vQj(rCpmigC.DC``e2">
-                      <field name="FIELDNAME">ghost</field>
-                    </shadow>
-                  </value>
-                  <value name="SNAPTO">
-                    <shadow type="objectList" id="_Z*FP;uC7w7m)7D;{+rF">
-                      <field name="FIELDNAME">CheckPoint14</field>
-                    </shadow>
-                  </value>
-                </block>
-              </statement>
             </block>
           </next>
         </block>
