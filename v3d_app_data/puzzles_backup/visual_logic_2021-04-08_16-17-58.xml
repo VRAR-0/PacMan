@@ -15,7 +15,7 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="true" scrollx="-161.14070180887143" scrolly="-192.9987831270264" scale="0.7850773937208823">
+  <tab name="player" type="SecondaryTab" active="false" scrollx="-161.14070180887143" scrolly="-192.9987831270264" scale="0.7850773937208823">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
@@ -438,14 +438,14 @@
                     </shadow>
                   </value>
                   <next>
-                    <block type="snapToObject" id="P^.W=FQk8b{$qW!q#hQx">
+                    <block type="snapBody" id="]XuFQXh0OQ4iq=)S5Hz(">
                       <value name="SNAPWHAT">
-                        <shadow type="objectList" id="TX|N.K[e(lzs{qe%V?$-">
+                        <shadow type="objectList" id="0w%iuxoirf@$QusA0MqR">
                           <field name="FIELDNAME">ghost</field>
                         </shadow>
                       </value>
                       <value name="SNAPTO">
-                        <shadow type="objectList" id="5!5n@1ig;,RKuKNqkwx8">
+                        <shadow type="objectList" id="D/ckazF3/7eCS-+]O:`~">
                           <field name="FIELDNAME">CheckPoint14</field>
                         </shadow>
                       </value>
@@ -855,7 +855,7 @@
       </next>
     </block>
   </tab>
-  <tab name="enemy" type="SecondaryTab" active="false" scrollx="49.36740112304642" scrolly="113.68429565429682" scale="0.6260121018585126">
+  <tab name="enemy" type="SecondaryTab" active="true" scrollx="49.36740112304642" scrolly="113.68429565429682" scale="0.6260121018585126">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
     </variables>
