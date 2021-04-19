@@ -15,11 +15,10 @@
       </value>
     </block>
   </tab>
-  <tab name="player" type="SecondaryTab" active="true" scrollx="-339.69689759904577" scrolly="-799.7721950198002" scale="0.9070294784580493">
+  <tab name="player" type="SecondaryTab" active="true" scrollx="-156.264694308039" scrolly="-643.4788023231304" scale="0.8655478265772726">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="3#/B.={,qCX$lLE8.`Up" type="">health</variable>
       <variable id="969V,`Q#~eW/]X:o{U$v" type="">move</variable>
-      <variable id="]OO*IsHE~nn*z*t/N=Z3" type="">isPlaying</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="5s$NDHFto0d!bNmlB6=Y" x="190" y="-10">
       <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
@@ -28,16 +27,6 @@
           <field name="NUM">3</field>
         </block>
       </value>
-      <next>
-        <block type="variables_set" id="KliIm%w+rCqZvCzw]|/#">
-          <field name="VAR" id="]OO*IsHE~nn*z*t/N=Z3">isPlaying</field>
-          <value name="VALUE">
-            <block type="logic_boolean" id="#-6.p:Kv}0sWnYK`^B(Q">
-              <field name="BOOL">TRUE</field>
-            </block>
-          </value>
-        </block>
-      </next>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="Keob=2gtO}Ynq~%*kP-!" x="130" y="110">
       <field name="VAR" id="969V,`Q#~eW/]X:o{U$v">move</field>
@@ -420,211 +409,192 @@
             </shadow>
           </value>
           <next>
-            <block type="controls_if" id="#9b56QvK_f@f_,*N9{Q~">
+            <block type="controls_if" id="R4Y|m)@W-R=C{.dXLHvr">
               <value name="IF0">
-                <block type="variables_get" id="[3,1}O3]s(LuCL5ok5+@">
-                  <field name="VAR" id="]OO*IsHE~nn*z*t/N=Z3">isPlaying</field>
-                </block>
-              </value>
-              <statement name="DO0">
-                <block type="controls_if" id="R4Y|m)@W-R=C{.dXLHvr">
-                  <value name="IF0">
-                    <block type="logic_compare" id="qRff5@zLn@+a$-}o$]jn">
-                      <field name="OP">LT</field>
-                      <value name="A">
-                        <block type="distanceBetweenObjects" id="G?PNI*Ov*Zu;dG@4Cf2q">
-                          <value name="OBJECT1">
-                            <shadow type="objectList" id="4rNSZ`LyBf#C_Z0zz/A7">
-                              <field name="FIELDNAME">PacMan</field>
-                            </shadow>
-                          </value>
-                          <value name="OBJECT2">
-                            <shadow type="objectList" id="#wf3Cp|SGU|ZFa!.3F{n">
-                              <field name="FIELDNAME">Instance_ghost_ghost_physics</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </value>
-                      <value name="B">
-                        <block type="math_number" id="fMI-6xy:l@x8w13t=DX4">
-                          <field name="NUM">1.3</field>
-                        </block>
-                      </value>
-                    </block>
-                  </value>
-                  <statement name="DO0">
-                    <block type="snapBody" id="vJX^]SNFDTM9bCk]cH$w">
-                      <value name="SNAPWHAT">
-                        <shadow type="objectList" id="W=4he~O!pDn}-gLatA{o">
+                <block type="logic_compare" id="qRff5@zLn@+a$-}o$]jn">
+                  <field name="OP">LT</field>
+                  <value name="A">
+                    <block type="distanceBetweenObjects" id="G?PNI*Ov*Zu;dG@4Cf2q">
+                      <value name="OBJECT1">
+                        <shadow type="objectList" id="4rNSZ`LyBf#C_Z0zz/A7">
                           <field name="FIELDNAME">PacMan</field>
                         </shadow>
                       </value>
+                      <value name="OBJECT2">
+                        <shadow type="objectList" id="#wf3Cp|SGU|ZFa!.3F{n">
+                          <field name="FIELDNAME">Instance_ghost_ghost_physics</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="math_number" id="fMI-6xy:l@x8w13t=DX4">
+                      <field name="NUM">1.3</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="snapBody" id="vJX^]SNFDTM9bCk]cH$w">
+                  <value name="SNAPWHAT">
+                    <shadow type="objectList" id="W=4he~O!pDn}-gLatA{o">
+                      <field name="FIELDNAME">PacMan</field>
+                    </shadow>
+                  </value>
+                  <value name="SNAPTO">
+                    <shadow type="objectList" id="E{)y4P!IHLi?bMY_J6Sd">
+                      <field name="FIELDNAME">CheckPoint13</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="snapToObject" id="P^.W=FQk8b{$qW!q#hQx">
+                      <value name="SNAPWHAT">
+                        <shadow type="objectList" id="TX|N.K[e(lzs{qe%V?$-">
+                          <field name="FIELDNAME">ghost</field>
+                        </shadow>
+                      </value>
                       <value name="SNAPTO">
-                        <shadow type="objectList" id="E{)y4P!IHLi?bMY_J6Sd">
-                          <field name="FIELDNAME">CheckPoint13</field>
+                        <shadow type="objectList" id="5!5n@1ig;,RKuKNqkwx8">
+                          <field name="FIELDNAME">CheckPoint14</field>
                         </shadow>
                       </value>
                       <next>
-                        <block type="snapToObject" id="P^.W=FQk8b{$qW!q#hQx">
-                          <value name="SNAPWHAT">
-                            <shadow type="objectList" id="TX|N.K[e(lzs{qe%V?$-">
-                              <field name="FIELDNAME">ghost</field>
-                            </shadow>
-                          </value>
-                          <value name="SNAPTO">
-                            <shadow type="objectList" id="5!5n@1ig;,RKuKNqkwx8">
-                              <field name="FIELDNAME">CheckPoint14</field>
-                            </shadow>
+                        <block type="variables_set" id="H`_{C_AOmy{7)zS;qd-H">
+                          <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
+                          <value name="VALUE">
+                            <block type="math_arithmetic" id=",P(+At*=Ary@33Fg[I:p">
+                              <field name="OP">MINUS</field>
+                              <value name="A">
+                                <shadow type="math_number" id="#ioG7K=4bRYb1V7?^`zV">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="variables_get" id="gz`[8#er=XTsmY]{wUkJ">
+                                  <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="A!!GfdLQym:sm6Ky#Sn`">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                            </block>
                           </value>
                           <next>
-                            <block type="variables_set" id="H`_{C_AOmy{7)zS;qd-H">
-                              <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
-                              <value name="VALUE">
-                                <block type="math_arithmetic" id=",P(+At*=Ary@33Fg[I:p">
-                                  <field name="OP">MINUS</field>
+                            <block type="controls_if" id="=7;s8?iF@Z.FqoPc]x#v">
+                              <value name="IF0">
+                                <block type="logic_compare" id="r6F*Zt{[KmOEmO3E,|j8">
+                                  <field name="OP">LT</field>
                                   <value name="A">
-                                    <shadow type="math_number" id="#ioG7K=4bRYb1V7?^`zV">
-                                      <field name="NUM">2</field>
-                                    </shadow>
-                                    <block type="variables_get" id="gz`[8#er=XTsmY]{wUkJ">
+                                    <block type="variables_get" id="_L*Lro?|t(j-pDjqsgI7">
                                       <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
                                     </block>
                                   </value>
                                   <value name="B">
-                                    <shadow type="math_number" id="A!!GfdLQym:sm6Ky#Sn`">
-                                      <field name="NUM">1</field>
-                                    </shadow>
+                                    <block type="math_number" id="{ydIo,AzrWC-`~0=h|:u">
+                                      <field name="NUM">3</field>
+                                    </block>
                                   </value>
                                 </block>
                               </value>
+                              <statement name="DO0">
+                                <block type="hide" id="GYtoPQ;%Tb%;wqHzGr{:">
+                                  <value name="VALUE">
+                                    <shadow type="objectList" id="/b!S%Q_z01e$M~DDJcF{">
+                                      <field name="FIELDNAME">Instance_Heart3_Heart_mesh</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </statement>
                               <next>
-                                <block type="controls_if" id="=7;s8?iF@Z.FqoPc]x#v">
+                                <block type="controls_if" id="y;+2Aqosi02?L!Sfcx0v">
                                   <value name="IF0">
-                                    <block type="logic_compare" id="r6F*Zt{[KmOEmO3E,|j8">
+                                    <block type="logic_compare" id="j6;6E|G^Z8juO@x3X58j">
                                       <field name="OP">LT</field>
                                       <value name="A">
-                                        <block type="variables_get" id="_L*Lro?|t(j-pDjqsgI7">
+                                        <block type="variables_get" id="qV^60^heyjQE2pD,z|#5">
                                           <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
                                         </block>
                                       </value>
                                       <value name="B">
-                                        <block type="math_number" id="{ydIo,AzrWC-`~0=h|:u">
-                                          <field name="NUM">3</field>
+                                        <block type="math_number" id=":dMK14ttA?+4L(_lbX_!">
+                                          <field name="NUM">2</field>
                                         </block>
                                       </value>
                                     </block>
                                   </value>
                                   <statement name="DO0">
-                                    <block type="hide" id="GYtoPQ;%Tb%;wqHzGr{:">
+                                    <block type="hide" id="DW6#OLqHah)8pbd,6-^a">
                                       <value name="VALUE">
-                                        <shadow type="objectList" id="/b!S%Q_z01e$M~DDJcF{">
-                                          <field name="FIELDNAME">Instance_Heart3_Heart_mesh</field>
+                                        <shadow type="objectList" id="Mw^+r.ODW1YttJY;S#:C">
+                                          <field name="FIELDNAME">Instance_Heart1_Heart_mesh</field>
                                         </shadow>
                                       </value>
                                     </block>
                                   </statement>
                                   <next>
-                                    <block type="controls_if" id="y;+2Aqosi02?L!Sfcx0v">
+                                    <block type="controls_if" id="Mbq=RCZ^~5gbCk/xD0NA">
                                       <value name="IF0">
-                                        <block type="logic_compare" id="j6;6E|G^Z8juO@x3X58j">
+                                        <block type="logic_compare" id="3#u*%}Vo~t{sI$Z:{N{V">
                                           <field name="OP">LT</field>
                                           <value name="A">
-                                            <block type="variables_get" id="qV^60^heyjQE2pD,z|#5">
+                                            <block type="variables_get" id="yD3/saTeHS(-j-+*IL|a">
                                               <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
                                             </block>
                                           </value>
                                           <value name="B">
-                                            <block type="math_number" id=":dMK14ttA?+4L(_lbX_!">
-                                              <field name="NUM">2</field>
+                                            <block type="math_number" id="{SO{t)W#WJGd#zXa$FZI">
+                                              <field name="NUM">1</field>
                                             </block>
                                           </value>
                                         </block>
                                       </value>
                                       <statement name="DO0">
-                                        <block type="hide" id="DW6#OLqHah)8pbd,6-^a">
+                                        <block type="hide" id="J]PuTMQHJutH[zEoMX{Z">
                                           <value name="VALUE">
-                                            <shadow type="objectList" id="Mw^+r.ODW1YttJY;S#:C">
-                                              <field name="FIELDNAME">Instance_Heart1_Heart_mesh</field>
+                                            <shadow type="objectList" id="gF=]S,AGk:jsj(S}QW]^">
+                                              <field name="FIELDNAME">Instance_Heart2_Heart_mesh</field>
                                             </shadow>
                                           </value>
-                                        </block>
-                                      </statement>
-                                      <next>
-                                        <block type="controls_if" id="Mbq=RCZ^~5gbCk/xD0NA">
-                                          <value name="IF0">
-                                            <block type="logic_compare" id="3#u*%}Vo~t{sI$Z:{N{V">
-                                              <field name="OP">LT</field>
-                                              <value name="A">
-                                                <block type="variables_get" id="yD3/saTeHS(-j-+*IL|a">
-                                                  <field name="VAR" id="3#/B.={,qCX$lLE8.`Up">health</field>
-                                                </block>
-                                              </value>
-                                              <value name="B">
-                                                <block type="math_number" id="{SO{t)W#WJGd#zXa$FZI">
-                                                  <field name="NUM">1</field>
-                                                </block>
-                                              </value>
-                                            </block>
-                                          </value>
-                                          <statement name="DO0">
-                                            <block type="hide" id="J]PuTMQHJutH[zEoMX{Z">
+                                          <next>
+                                            <block type="show" id="h~0/X!1cBd5]cGWxBHDZ">
                                               <value name="VALUE">
-                                                <shadow type="objectList" id="gF=]S,AGk:jsj(S}QW]^">
-                                                  <field name="FIELDNAME">Instance_Heart2_Heart_mesh</field>
+                                                <shadow type="objectList" id="cMhJ0aU{?4(m`]49;3z/">
+                                                  <field name="FIELDNAME">GameOver</field>
                                                 </shadow>
                                               </value>
                                               <next>
-                                                <block type="show" id="h~0/X!1cBd5]cGWxBHDZ">
+                                                <block type="playSound" id="v6U]sY!x@t_*LB^G^h?~">
+                                                  <field name="LOOP">FALSE</field>
                                                   <value name="VALUE">
-                                                    <shadow type="objectList" id="cMhJ0aU{?4(m`]49;3z/">
-                                                      <field name="FIELDNAME">GameOver</field>
-                                                    </shadow>
+                                                    <block type="loadSoundAdv" id="/ZqvU4qMJ{q75I28?;2.">
+                                                      <field name="TYPE">MUSIC</field>
+                                                      <value name="URL">
+                                                        <shadow type="text" id="-0NUK~U-+1dNV3d~Jg|0">
+                                                          <field name="TEXT">./sounds/loose.mp3</field>
+                                                        </shadow>
+                                                      </value>
+                                                    </block>
                                                   </value>
                                                   <next>
-                                                    <block type="playSound" id="v6U]sY!x@t_*LB^G^h?~">
-                                                      <field name="LOOP">FALSE</field>
+                                                    <block type="stopSound" id="re1VNLv8fvHS9dp-m-yX">
                                                       <value name="VALUE">
-                                                        <block type="loadSoundAdv" id="/ZqvU4qMJ{q75I28?;2.">
+                                                        <block type="loadSoundAdv" id="g9#_KJ=@R2(xA7zMf*s=">
                                                           <field name="TYPE">MUSIC</field>
                                                           <value name="URL">
-                                                            <shadow type="text" id="-0NUK~U-+1dNV3d~Jg|0">
-                                                              <field name="TEXT">./sounds/loose.mp3</field>
+                                                            <shadow type="text" id="/iF0h.N;5(i;5t1/_d!y">
+                                                              <field name="TEXT">./sounds/music.mp3</field>
                                                             </shadow>
                                                           </value>
                                                         </block>
                                                       </value>
-                                                      <next>
-                                                        <block type="stopSound" id="re1VNLv8fvHS9dp-m-yX">
-                                                          <value name="VALUE">
-                                                            <block type="loadSoundAdv" id="g9#_KJ=@R2(xA7zMf*s=">
-                                                              <field name="TYPE">MUSIC</field>
-                                                              <value name="URL">
-                                                                <shadow type="text" id="/iF0h.N;5(i;5t1/_d!y">
-                                                                  <field name="TEXT">./sounds/music.mp3</field>
-                                                                </shadow>
-                                                              </value>
-                                                            </block>
-                                                          </value>
-                                                          <next>
-                                                            <block type="variables_set" id="!EVJU+FuqvVk,yAn7zqj">
-                                                              <field name="VAR" id="]OO*IsHE~nn*z*t/N=Z3">isPlaying</field>
-                                                              <value name="VALUE">
-                                                                <block type="logic_boolean" id="cfg:*1$No7Xr4~G%%q=!">
-                                                                  <field name="BOOL">FALSE</field>
-                                                                </block>
-                                                              </value>
-                                                            </block>
-                                                          </next>
-                                                        </block>
-                                                      </next>
                                                     </block>
                                                   </next>
                                                 </block>
                                               </next>
                                             </block>
-                                          </statement>
+                                          </next>
                                         </block>
-                                      </next>
+                                      </statement>
                                     </block>
                                   </next>
                                 </block>
@@ -634,7 +604,7 @@
                         </block>
                       </next>
                     </block>
-                  </statement>
+                  </next>
                 </block>
               </statement>
             </block>
